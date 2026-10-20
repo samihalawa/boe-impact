@@ -1,0 +1,38 @@
+{
+  "name": "BOE Impact",
+  "promise": "Ve qué cambió. Entiende qué revisar.",
+  "audience": "Asesorías y profesionales que trabajan con normas españolas.",
+  "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
+  "short": "Cambios legales con fuentes",
+  "source": "BOE",
+  "keywords": [
+    "boe",
+    "legislacion",
+    "cambios-normativos",
+    "asesorias",
+    "comparacion"
+  ],
+  "prompts": [
+    "Compara un artículo entre dos fechas y muéstrame el antes, el después y la fuente.",
+    "Revisa esta norma: distingue publicación, entrada en vigor y régimen transitorio.",
+    "Enséñame una comparación guardada y explica qué no verifica."
+  ],
+  "benefits": [
+    "Texto anterior y posterior con fechas de cada versión.",
+    "Diferencias reproducibles, no solo un resumen.",
+    "Interpretación práctica separada de la redacción oficial."
+  ],
+  "critique": "El diff técnico no mostraba cómodamente el antes y el después. Las respuestas de error del sumario podían parecer búsquedas sin resultados.",
+  "change": "Textos y fechas explícitas, informe de cambios legible y validación del estado del proveedor.",
+  "limits": "La consolidación es informativa. No decide automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica la publicación original para decisiones jurídicas.",
+  "tool": "boe_compare",
+  "args": {
+    "law_id": "BOE-A-2017-12902",
+    "block_id": "a1-30",
+    "older_date": "2019-01-01",
+    "newer_date": "2026-10-20"
+  },
+  "extra": "Descubre block_id con boe_consolidated antes de comparar. No adivines artículos. Distingue publicación, vigencia, aplicación transitoria y consulta; una versión ausente no se sustituye por la actual.",
+  "slug": "boe-impact",
+  "version": "0.2.0"
+}

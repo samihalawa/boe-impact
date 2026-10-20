@@ -1,0 +1,104 @@
+{
+  "version": "0.2.0",
+  "checked_at": "2026-10-20T16:20:04.927306+00:00",
+  "core_sha256": "0e320baf7c3f49e3fbe97b53f125d2910d46c723534f4bf09a4c9799fe579ac1",
+  "scope": "Official-provider adapter smoke checks; not model-based task acceptance or adoption.",
+  "passed": 4,
+  "total": 4,
+  "tests": [
+    {
+      "tool": "boe_daily",
+      "arguments": {
+        "date": "2026-10-19",
+        "limit": 3
+      },
+      "ok": true,
+      "duration_seconds": 0.65,
+      "coverage": {
+        "date": "2026-10-19",
+        "matching_items": 261,
+        "returned": 3,
+        "truncated": true
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/datosabiertos/api/boe/sumario/20261019",
+          "retrieved_at": "2026-10-20T16:19:46.903752+00:00",
+          "sha256": "c4a67600ebb45fa0890b9c986f733293fe663240af05c056a1419f12aa61fbbb",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "boe_document",
+      "arguments": {
+        "document_id": "BOE-A-2026-21668",
+        "max_chars": 1000
+      },
+      "ok": true,
+      "duration_seconds": 0.38,
+      "coverage": {
+        "characters": 16091,
+        "returned_characters": 1000,
+        "truncated": true
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-21668",
+          "retrieved_at": "2026-10-20T16:19:47.287077+00:00",
+          "sha256": "08493d04fc6a1748627a84133270d2e7b1fa6e5bb13d74f2a032cc71405751f4",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "boe_consolidated",
+      "arguments": {
+        "law_id": "BOE-A-2017-12902",
+        "limit": 10
+      },
+      "ok": true,
+      "duration_seconds": 2.62,
+      "coverage": {
+        "as_of": "2026-10-20",
+        "total_blocks": 557,
+        "offset": 0,
+        "next_offset": 10
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2017-12902/texto",
+          "retrieved_at": "2026-10-20T16:19:49.885208+00:00",
+          "sha256": "97971c7a97b2f1ade56d8ba924b9576f3250fd8688d5fd4dce276b8f0c24f148",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "boe_compare",
+      "arguments": {
+        "law_id": "BOE-A-2017-12902",
+        "block_id": "a1-30",
+        "older_date": "2019-01-01",
+        "newer_date": "2026-10-20"
+      },
+      "ok": true,
+      "duration_seconds": 0.02,
+      "coverage": {
+        "truncated": false
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2017-12902/texto",
+          "retrieved_at": "2026-10-20T16:19:49.885208+00:00",
+          "sha256": "97971c7a97b2f1ade56d8ba924b9576f3250fd8688d5fd4dce276b8f0c24f148",
+          "cache_hit": true
+        }
+      ],
+      "error": null
+    }
+  ]
+}

@@ -5,15 +5,15 @@
     "email": "sami@samihalawa.com"
   },
   "metadata": {
-    "description": "Show what changed in a Spanish legal text, with article-level source evidence and clearly separated practical implications.",
-    "version": "0.1.2"
+    "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "boe-impact",
       "source": "./",
-      "description": "Show what changed in a Spanish legal text, with article-level source evidence and clearly separated practical implications.",
-      "version": "0.1.2"
+      "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
+      "version": "0.2.0"
     }
   ]
 }
