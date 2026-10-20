@@ -1,0 +1,22 @@
+[
+  {
+    "name": "boe_daily",
+    "signature": "(date: 'str', query: 'str' = '', limit: 'int' = 30) -> 'dict[str, Any]'",
+    "description": "Read a specific BOE issue and filter item titles. Returns official identifiers and links, not an exhaustive search of legislation."
+  },
+  {
+    "name": "boe_document",
+    "signature": "(document_id: 'str', max_chars: 'int' = 40000) -> 'dict[str, Any]'",
+    "description": "Read the published BOE document XML and return text with provenance. Output truncation is explicit."
+  },
+  {
+    "name": "boe_consolidated",
+    "signature": "(law_id: 'str', block_id: 'str' = '', as_of: 'str' = '', offset: 'int' = 0, limit: 'int' = 10) -> 'dict[str, Any]'",
+    "description": "Read dated consolidated law blocks. Use returned block IDs for article-level retrieval; selection follows source version dates, not legal advice."
+  },
+  {
+    "name": "boe_compare",
+    "signature": "(law_id: 'str', block_id: 'str', older_date: 'str', newer_date: 'str') -> 'dict[str, Any]'",
+    "description": "Compare one consolidated law block at two explicit dates. Returns a reproducible text diff and both version metadata."
+  }
+]

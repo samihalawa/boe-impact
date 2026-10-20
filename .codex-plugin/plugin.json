@@ -1,0 +1,31 @@
+{
+  "author": {
+    "email": "sami@samihalawa.com",
+    "name": "Sami Halawa"
+  },
+  "description": "Show what changed in a Spanish legal text, with article-level source evidence and clearly separated practical implications.",
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./assets/icon.png",
+    "defaultPrompt": [
+      "Compare two versions of a Spanish legal provision and cite the exact changes.",
+      "Find relevant notices in a BOE issue and separate publication from effective dates."
+    ],
+    "developerName": "Sami Halawa",
+    "displayName": "BOE Impact",
+    "logo": "./assets/icon.png",
+    "longDescription": "Show what changed in a Spanish legal text, with article-level source evidence and clearly separated practical implications.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo comprehensive legal advice, compliance certification, private case-law database, automatic applicability determination or persistent monitoring. Consolidated text is not a substitute for checking the official publication.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
+    "shortDescription": "Official legal changes"
+  },
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only",
+    "boe-impact"
+  ],
+  "license": "MIT",
+  "name": "boe-impact",
+  "skills": "./skills",
+  "version": "0.1.2"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "boe-impact",
+  "displayName": "BOE Impact",
+  "version": "0.1.2",
+  "description": "Show what changed in a Spanish legal text, with article-level source evidence and clearly separated practical implications.",
+  "author": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only"
+  ],
+  "homepage": "https://github.com/samihalawa/boe-impact/blob/main/README.md",
+  "repository": "https://github.com/samihalawa/boe-impact",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/samihalawa/boe-impact/blob/main/README.md",
+  "supportUrl": "https://github.com/samihalawa/boe-impact/blob/main/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/boe-impact/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/boe-impact/blob/main/TERMS.md"
+}

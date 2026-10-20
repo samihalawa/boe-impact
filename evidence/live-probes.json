@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-10-20T15:38:46.694660+00:00",
+  "scope": "Bounded adapter smoke tests, not full historical coverage or model-based user acceptance.",
+  "passed": 4,
+  "total": 4,
+  "tests": [
+    {
+      "tool": "boe_daily",
+      "arguments": {
+        "date": "2026-10-19",
+        "limit": 3
+      },
+      "ok": true,
+      "elapsed_seconds": 0.406,
+      "coverage": {
+        "date": "2026-10-19",
+        "matching_items": 261,
+        "returned": 3,
+        "truncated": true
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/datosabiertos/api/boe/sumario/20261019",
+          "retrieved_at": "2026-10-20T15:38:41.782683+00:00",
+          "sha256": "c4a67600ebb45fa0890b9c986f733293fe663240af05c056a1419f12aa61fbbb",
+          "cache_hit": false
+        }
+      ],
+      "error": null,
+      "record_count": 3
+    },
+    {
+      "tool": "boe_document",
+      "arguments": {
+        "document_id": "BOE-A-2026-21668",
+        "max_chars": 1000
+      },
+      "ok": true,
+      "elapsed_seconds": 0.575,
+      "coverage": {
+        "characters": 16091,
+        "returned_characters": 1000,
+        "truncated": true
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-21668",
+          "retrieved_at": "2026-10-20T15:38:42.023216+00:00",
+          "sha256": "08493d04fc6a1748627a84133270d2e7b1fa6e5bb13d74f2a032cc71405751f4",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "boe_compare",
+      "arguments": {
+        "law_id": "BOE-A-2017-12902",
+        "block_id": "a4",
+        "older_date": "2020-01-01",
+        "newer_date": "2026-10-19"
+      },
+      "ok": true,
+      "elapsed_seconds": 1.277,
+      "coverage": {
+        "truncated": false
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2017-12902/texto",
+          "retrieved_at": "2026-10-20T15:38:43.221351+00:00",
+          "sha256": "97971c7a97b2f1ade56d8ba924b9576f3250fd8688d5fd4dce276b8f0c24f148",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "boe_consolidated",
+      "arguments": {
+        "law_id": "BOE-A-2017-12902",
+        "limit": 10
+      },
+      "ok": true,
+      "elapsed_seconds": 1.52,
+      "coverage": {
+        "as_of": "2026-10-20",
+        "total_blocks": 557,
+        "offset": 0,
+        "next_offset": 10
+      },
+      "sources": [
+        {
+          "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2017-12902/texto",
+          "retrieved_at": "2026-10-20T15:38:43.276021+00:00",
+          "sha256": "97971c7a97b2f1ade56d8ba924b9576f3250fd8688d5fd4dce276b8f0c24f148",
+          "cache_hit": false
+        }
+      ],
+      "error": null,
+      "record_count": 10
+    }
+  ]
+}
