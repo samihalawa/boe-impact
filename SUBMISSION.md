@@ -6,6 +6,10 @@ Repository: https://github.com/samihalawa/boe-impact
 
 Plugin at repository root. Stable identity: `boe-impact`.
 
+Public product page: https://samihalawa.github.io/boe-impact/
+
+Saved official-source report: https://samihalawa.github.io/boe-impact/demo.html
+
 ## Listing
 
 Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.
