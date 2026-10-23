@@ -1,7 +1,7 @@
 {
   "version": "0.3.0",
-  "checked_at": "2026-10-23T08:51:59.983508+00:00",
-  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Does not validate production endpoint or infrastructure.",
+  "checked_at": "2026-10-23T09:12:20.030118+00:00",
+  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Bounded PLACSP responses explicitly preserve partial coverage. Does not validate production endpoint or infrastructure.",
   "check": {
     "slug": "boe-impact",
     "tool": "boe_find_articles",
@@ -11,10 +11,11 @@
       "as_of": "2026-10-20"
     },
     "ok": true,
+    "returned": 1,
     "sources": [
       {
         "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2017-12902/texto",
-        "retrieved_at": "2026-10-23T08:51:17.595131+00:00",
+        "retrieved_at": "2026-10-23T09:12:09.286939+00:00",
         "sha256": "97971c7a97b2f1ade56d8ba924b9576f3250fd8688d5fd4dce276b8f0c24f148",
         "cache_hit": false
       }
@@ -29,6 +30,6 @@
       "search_text": false
     },
     "error": null,
-    "duration_seconds": 1.95
+    "duration_seconds": 2.06
   }
 }
