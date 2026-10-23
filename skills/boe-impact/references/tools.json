@@ -18,5 +18,10 @@
     "name": "boe_compare",
     "signature": "(law_id: 'str', block_id: 'str', older_date: 'str', newer_date: 'str') -> 'dict[str, Any]'",
     "description": "Compare one consolidated law block at two explicit dates. Returns a reproducible text diff and both version metadata."
+  },
+  {
+    "name": "boe_find_articles",
+    "signature": "(law_id: 'str', query: 'str', as_of: 'str' = '', offset: 'int' = 0, limit: 'int' = 10, search_text: 'bool' = False) -> 'dict[str, Any]'",
+    "description": "Locate block IDs by article title (and optionally text) before version comparison. Searches one named consolidated law."
   }
 ]

@@ -1,14 +1,10 @@
-# Claude review — BOE Impact 0.2.0
+# Claude review — BOE Impact 0.3.0
 
 Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
 Repository: https://github.com/samihalawa/boe-impact
 
 Plugin at repository root. Stable identity: `boe-impact`.
-
-Public product page: https://samihalawa.github.io/boe-impact/
-
-Saved official-source report: https://samihalawa.github.io/boe-impact/demo.html
 
 ## Listing
 

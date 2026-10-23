@@ -22,11 +22,9 @@ Compara artículos del BOE entre dos fechas y separa el cambio textual de sus po
 
 También: “Revisa esta norma: distingue publicación, entrada en vigor y régimen transitorio.”
 
-[Ver el informe de ejemplo](https://samihalawa.github.io/boe-impact/demo.html) · [Web y demostración](https://samihalawa.github.io/boe-impact/) · [Flujo completo](skills/boe-impact/references/workflow.md)
+[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/boe-impact/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
-
-[![Vista de BOE Impact](docs/preview.jpg)](https://samihalawa.github.io/boe-impact/)
 
 ## Instalar en Claude Code
 
@@ -55,7 +53,7 @@ python3 skills/boe-impact/scripts/run.py demo --format html --output ejemplo.htm
 ## Consultar y guardar un informe
 
 ```bash
-python3 skills/boe-impact/scripts/run.py report boe_compare --json '{"law_id": "BOE-A-2017-12902", "block_id": "a1-30", "older_date": "2019-01-01", "newer_date": "2026-10-20"}'
+python3 skills/boe-impact/scripts/run.py report boe_find_articles --json '{"law_id": "BOE-A-2017-12902", "query": "Artículo 118", "as_of": "2026-10-20"}'
 ```
 
 Añade `--format html --output informe.html` o `--format json`. No se sobrescriben archivos por defecto. `doctor` comprueba el entorno local sin consultar proveedores.

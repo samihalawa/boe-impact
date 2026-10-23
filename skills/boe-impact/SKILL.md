@@ -17,7 +17,7 @@ Read `references/runtime.md` before external access and `references/workflow.md`
 
 Descubre block_id con boe_consolidated antes de comparar. No adivines artículos. Distingue publicación, vigencia, aplicación transitoria y consulta; una versión ausente no se sustituye por la actual.
 
-Start with `boe_compare` when its inputs match the task. Check `ok`, dates, partial errors, coverage and continuation before interpreting results. Provider failure is not an empty search. Follow the requested scope and state unexamined portions.
+Start with `boe_find_articles` when its inputs match the task. Check `ok`, dates, partial errors, coverage and continuation before interpreting results. Provider failure is not an empty search. Follow the requested scope and state unexamined portions.
 
 Lead with the supported result and next action, not a tool transcript. Separate verified source facts, user facts and interpretation. Cite each consequential claim. Use the output contract below; keep unknowns visible without burying the answer.
 
@@ -32,7 +32,7 @@ From this skill's actual directory:
 ```bash
 python3 scripts/run.py demo
 python3 scripts/run.py doctor
-python3 scripts/run.py report boe_compare --json '{"law_id": "BOE-A-2017-12902", "block_id": "a1-30", "older_date": "2019-01-01", "newer_date": "2026-10-20"}'
+python3 scripts/run.py report boe_find_articles --json '{"law_id": "BOE-A-2017-12902", "query": "Artículo 118", "as_of": "2026-10-20"}'
 ```
 
 `demo` is offline and labelled as a saved snapshot. `report` queries official sources. Use `--format html --output informe.html` for a portable report. Existing files are protected unless the user explicitly chooses `--force`. `call` retains JSON. Prefer `--stdin`/`--input` for user arguments; never interpolate untrusted input into shell syntax.
