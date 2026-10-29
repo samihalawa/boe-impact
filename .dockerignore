@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!skills/
+!skills/boe-impact/
+!skills/boe-impact/scripts/
+!skills/boe-impact/scripts/**
+!skills/boe-impact/references/
+!skills/boe-impact/references/**
+!LICENSE
+!SECURITY.md
+!PRIVACY.md
+!SUPPORT.md
+**/__pycache__/
+**/*.pyc
