@@ -19,12 +19,12 @@
         "developerName": "Sami Halawa",
         "displayName": "BOE Impact",
         "logo": "./assets/icon.png",
-        "longDescription": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.\n\nAsesorías y profesionales que trabajan con normas españolas. Texto anterior y posterior con fechas de cada versión. Diferencias reproducibles, no solo un resumen. Interpretación práctica separada de la redacción oficial.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nLa consolidación es informativa. No decide automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica la publicación original para decisiones jurídicas.",
+        "longDescription": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.\n\nAsesorías y profesionales que trabajan con normas españolas. Texto anterior y posterior con fechas de cada versión. Diferencias reproducibles, no solo un resumen. Interpretación práctica separada de la redacción oficial.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Claude Code invoca los adaptadores mediante el MCP local declarado (Python 3.11+ y red autorizada). Otros anfitriones utilizan únicamente sus herramientas nativas disponibles, sin ejecutar scripts como alternativa.\n\nLa consolidación es informativa. No decide automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica la publicación original para decisiones jurídicas.",
         "shortDescription": "Cambios legales con fuentes",
         "websiteURL": "https://samihalawa.github.io/boe-impact/",
-        "supportURL": "https://github.com/samihalawa/boe-impact/blob/main/SUPPORT.md",
-        "privacyPolicyURL": "https://github.com/samihalawa/boe-impact/blob/main/PRIVACY.md",
-        "termsOfServiceURL": "https://github.com/samihalawa/boe-impact/blob/main/TERMS.md"
+        "supportURL": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/TERMS.md"
       }
     }
   },
@@ -39,7 +39,7 @@
   ],
   "license": "MIT",
   "name": "boe-impact",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://samihalawa.github.io/boe-impact/",
   "repository": "https://github.com/samihalawa/boe-impact"
 }

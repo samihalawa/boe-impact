@@ -1,7 +1,7 @@
 {
   "name": "boe-impact",
   "displayName": "BOE Impact",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
   "author": {
     "name": "Sami Halawa",
@@ -19,8 +19,9 @@
   "homepage": "https://samihalawa.github.io/boe-impact/",
   "repository": "https://github.com/samihalawa/boe-impact",
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/samihalawa/boe-impact/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/boe-impact/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/boe-impact/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/boe-impact/blob/main/TERMS.md"
+  "documentationUrl": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/README.md",
+  "supportUrl": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/boe-impact/blob/release/v0.3.0-local/TERMS.md",
+  "mcpServers": "./.mcp.json"
 }

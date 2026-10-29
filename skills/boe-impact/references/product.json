@@ -33,5 +33,5 @@
   },
   "extra": "Descubre block_id con boe_consolidated antes de comparar. No adivines artículos. Distingue publicación, vigencia, aplicación transitoria y consulta; una versión ausente no se sustituye por la actual.",
   "slug": "boe-impact",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
