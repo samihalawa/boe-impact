@@ -1,7 +1,7 @@
 {
   "name": "boe-impact",
   "displayName": "BOE Impact",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
   "author": {
     "name": "Sami Halawa",

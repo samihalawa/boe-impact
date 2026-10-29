@@ -27,7 +27,7 @@ A concise result; the identifier and scope; a compact table of the product's rel
 
 ## Runtime and saved example
 
-Use the declared `boe-impact` local MCP server in Claude Code. Its tools are product-scoped. Start with `boe_find_articles` when appropriate; use `boe_impact_demo` for a dated offline example, explicitly labelled historical. Read `references/mcp-tools.json` for the exact JSON schemas.
+Use the declared `boe-impact` local MCP server in a compatible desktop host. Its tools are product-scoped. Start with `boe_find_articles` when appropriate; use `boe_impact_demo` for a dated offline example, explicitly labelled historical. Read `references/mcp-tools.json` for the exact JSON schemas.
 
 For deterministic Markdown, HTML or JSON, call `boe_impact_report` with `operation`, its `arguments`, and `format`. It returns report text without writing a file. Save it with the host's own file tool only when the user requests that path.
 
