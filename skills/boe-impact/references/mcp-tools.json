@@ -1,0 +1,241 @@
+{
+  "server": "boe-impact",
+  "version": "0.4.0",
+  "tools": [
+    {
+      "name": "boe_daily",
+      "title": "boe daily",
+      "description": "Read a specific BOE issue and filter item titles. Returns official identifiers and links, not an exhaustive search of legislation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string",
+            "default": ""
+          },
+          "limit": {
+            "type": "integer",
+            "default": 30
+          }
+        },
+        "required": [
+          "date"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "boe_document",
+      "title": "boe document",
+      "description": "Read the published BOE document XML and return text with provenance. Output truncation is explicit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "document_id": {
+            "type": "string"
+          },
+          "max_chars": {
+            "type": "integer",
+            "default": 40000
+          }
+        },
+        "required": [
+          "document_id"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "boe_consolidated",
+      "title": "boe consolidated",
+      "description": "Read dated consolidated law blocks. Use returned block IDs for article-level retrieval; selection follows source version dates, not legal advice.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "law_id": {
+            "type": "string"
+          },
+          "block_id": {
+            "type": "string",
+            "default": ""
+          },
+          "as_of": {
+            "type": "string",
+            "default": ""
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10
+          }
+        },
+        "required": [
+          "law_id"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "boe_compare",
+      "title": "boe compare",
+      "description": "Compare one consolidated law block at two explicit dates. Returns a reproducible text diff and both version metadata.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "law_id": {
+            "type": "string"
+          },
+          "block_id": {
+            "type": "string"
+          },
+          "older_date": {
+            "type": "string"
+          },
+          "newer_date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "law_id",
+          "block_id",
+          "older_date",
+          "newer_date"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "boe_find_articles",
+      "title": "boe find articles",
+      "description": "Locate block IDs by article title (and optionally text) before version comparison. Searches one named consolidated law.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "law_id": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string",
+            "default": ""
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10
+          },
+          "search_text": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "law_id",
+          "query"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "boe_impact_demo",
+      "title": "BOE Impact · ejemplo guardado",
+      "description": "Read the bundled dated example without network access. It is historical, never live.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "boe_impact_report",
+      "title": "BOE Impact · informe",
+      "description": "Return a deterministic Markdown, HTML or JSON report for one product operation or the saved example. Writes no files; preserve source dates and partial coverage.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "boe_daily",
+              "boe_document",
+              "boe_consolidated",
+              "boe_compare",
+              "boe_find_articles",
+              "boe_impact_demo"
+            ]
+          },
+          "arguments": {
+            "type": "object",
+            "default": {}
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "markdown",
+              "html",
+              "json"
+            ],
+            "default": "markdown"
+          }
+        },
+        "required": [
+          "operation"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    }
+  ]
+}
