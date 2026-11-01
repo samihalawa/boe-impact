@@ -1,8 +1,7 @@
 {
   "version": "0.6.0",
   "endpoint": "https://aiplugins.megawebs.com/mcp/boe-impact",
-  "status": "not_run",
-  "scope": "Input mapping for real scoped MCP calls. Direct protocol execution proves tool behavior only; semantic no-tool negative cases require an actual assistant session. Repeated arguments deliberately assess distinct output interpretation, not additional unique runtime inputs.",
+  "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
     {
       "id": "positive-1",
@@ -10,7 +9,8 @@
       "tool": "find_spanish_law_articles",
       "arguments": {
         "law_id": "BOE-A-2017-12902",
-        "query": "contratos menores"
+        "query": "contratos menores",
+        "search_text": true
       },
       "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
     },
@@ -42,7 +42,8 @@
       "arguments": {
         "law_id": "BOE-A-2017-12902",
         "query": "adjudicación",
-        "limit": 3
+        "limit": 3,
+        "search_text": true
       },
       "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
     },
@@ -53,7 +54,8 @@
       "arguments": {
         "law_id": "BOE-A-2017-12902",
         "query": "contratos",
-        "as_of": "2024-01-01"
+        "as_of": "2024-01-01",
+        "search_text": true
       },
       "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
     }
@@ -63,22 +65,19 @@
       "id": "negative-1",
       "prompt": "Certifica que mi contrato cumple toda la legislación.",
       "prohibited_tool": "find_spanish_law_articles",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion.",
-      "status": "not_run"
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion."
     },
     {
       "id": "negative-2",
       "prompt": "Presenta un recurso administrativo por mí.",
       "prohibited_tool": "find_spanish_law_articles",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion.",
-      "status": "not_run"
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion."
     },
     {
       "id": "negative-3",
       "prompt": "Vigila automáticamente el BOE cada día.",
       "prohibited_tool": "find_spanish_law_articles",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion.",
-      "status": "not_run"
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion."
     }
   ]
 }
