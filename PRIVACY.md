@@ -1,16 +1,15 @@
-# Data practices — local MCP skills release 0.4.0
+# Privacidad — BOE Impact
 
-This release contains reusable assistant instructions and one declared, bundled stdio MCP process for the local source adapters. The MCP returns data and report text and does not write report files. Authenticated proxy URLs are rejected before transport; unauthenticated system routing and TLS verification are preserved. It does not provision a publisher-operated server, user account, analytics system or payment system. The source code makes read-only requests to the official data providers listed in the product's sources document. Those requests necessarily include the search text, document identifier, date or cadastral reference needed for the task, and the provider sees the network address of the executing runtime. Do not include credentials or unrelated personal data in queries.
+Esta edición contiene instrucciones, referencias y ejemplos históricos. No incluye un servicio de ejecución ni un punto de recepción de consultas del editor. Las instrucciones no incorporan telemetría, seguimiento ni una caché de consultas propios.
 
-The adapter maintains a bounded memory-only cache for up to five minutes while its process is running. It has no disk response cache, telemetry or persistent user database. Returned results may remain in your assistant conversation, shell output or files you explicitly save, according to the host platform and your settings. The publisher does not control those platforms' retention or data policies.
+El asistente utiliza únicamente la navegación y lectura de archivos nativas disponibles y autorizadas en su anfitrión, o los documentos que facilite el usuario. Si navega, el buscador y las fuentes visitadas pueden recibir los términos públicos necesarios y la dirección de red de ese entorno. Minimiza esos términos. No envíes la conversación, documentos íntegros, perfiles personales ni credenciales a fuentes externas para una búsqueda pública.
 
-Native browsing follows the host assistant's own data handling, which is separate from this code. Public source data can still carry personal information and separate reuse conditions. The BORME workflow focuses on company acts, not profiling individuals; Catastro exposes only non-protected descriptive fields.
+La conversación, los documentos y los informes que se guarden se conservan conforme a las opciones y políticas del anfitrión y del usuario. El editor no puede imponer plazos de borrado en sistemas ajenos ni garantizar que el anfitrión no registre su actividad. El alojamiento de la documentación pública tiene sus propias políticas y registros.
 
-This document describes the distributed local release. A future hosted MCP service must disclose its actual operator, hosting, logs, retention, security, processors and user-rights contact before deployment or public submission. No such hosted service is part of this release.
+Las publicaciones oficiales pueden contener nombres, direcciones u otros datos personales públicos. Su publicación no autoriza perfiles personales, prospección ni reutilización indiscriminada. Comparte solo lo pertinente para la petición y respeta las condiciones de la fuente.
 
-Publisher contact: sami@samihalawa.com. Do not send secrets or protected documents in support requests.
+Las capturas incluidas son históricas, con fechas y procedencia preservadas. No son registros de actividad actual del usuario. No pidas identidades, datos bancarios o acceso protegido para ampliar esta habilidad.
 
+La consolidación es informativa. La habilidad no determina automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica las publicaciones originales para decisiones jurídicas.
 
-## Saved examples and exported reports
-
-Small labelled snapshots of public official records enable offline demonstrations; they are not user-submitted files. The MCP returns report text without writing files; any host-side save writes only to the path selected by the user. Reports include no JavaScript, analytics or external assets. Review them before sharing. Static product pages use no account or analytics system. If served through GitHub Pages, GitHub operates the hosting and may process connection logs under its policies, separate from this software.
+Contacto: sami@samihalawa.com. No envíes información confidencial para una consulta de soporte.

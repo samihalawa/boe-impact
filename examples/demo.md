@@ -1,3 +1,5 @@
+> Documento histórico de una edición anterior. Conserva sus datos, fecha y procedencia; no es una consulta actual ni una función de ejecución de esta habilidad.
+
 # BOE Impact
 
 Ve qué cambió. Entiende qué revisar.
@@ -30,6 +32,6 @@ Captura guardada: 2026-10-20T16:59:24.512813+00:00.
 
 ## Límites y comprobaciones
 
-- Search covers only this law and the selected date. A matched article is not a finding of legal applicability. Use boe_compare with its returned block_id and explicit dates.
+- Search covers only this law and the selected date. A matched article is not a finding of legal applicability. Compare the identified article versions and explicit dates in the official sources.
 
 Software independiente de Sami Halawa. Conserva el JSON para inspeccionar todos los campos y textos completos.

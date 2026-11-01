@@ -18,20 +18,12 @@
     "Enséñame una comparación guardada y explica qué no verifica."
   ],
   "benefits": [
-    "Texto anterior y posterior con fechas de cada versión.",
-    "Diferencias reproducibles, no solo un resumen.",
-    "Interpretación práctica separada de la redacción oficial."
+    "Textos anteriores y posteriores con versiones y fuentes identificadas.",
+    "Cambios literales separados de interpretación y dudas de aplicación.",
+    "Comprobaciones sobre excepciones, transición y publicación original."
   ],
-  "critique": "El diff técnico no mostraba cómodamente el antes y el después. Las respuestas de error del sumario podían parecer búsquedas sin resultados.",
-  "change": "La nueva función boe_find_articles lleva al usuario a una salida más directamente utilizable; Textos y fechas explícitas, informe de cambios legible y validación del estado del proveedor.",
-  "limits": "La consolidación es informativa. No decide automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica la publicación original para decisiones jurídicas.",
-  "tool": "boe_find_articles",
-  "args": {
-    "law_id": "BOE-A-2017-12902",
-    "query": "Artículo 118",
-    "as_of": "2026-10-20"
-  },
-  "extra": "Descubre block_id con boe_consolidated antes de comparar. No adivines artículos. Distingue publicación, vigencia, aplicación transitoria y consulta; una versión ausente no se sustituye por la actual.",
+  "limits": "La consolidación es informativa. La habilidad no determina automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica las publicaciones originales para decisiones jurídicas.",
+  "extra": "Identifica el artículo en la propia norma y compara versiones explícitas. Distingue publicación, vigencia, aplicación transitoria y consulta. Una versión ausente no se sustituye por la actual.",
   "slug": "boe-impact",
-  "version": "0.4.0"
+  "version": "0.5.0"
 }
