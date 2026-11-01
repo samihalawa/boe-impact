@@ -1,8 +1,8 @@
 {
   "name": "boe-impact",
   "displayName": "BOE Impact",
-  "version": "0.5.0",
-  "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
+  "version": "0.6.0",
+  "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"

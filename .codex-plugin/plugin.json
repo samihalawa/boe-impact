@@ -3,7 +3,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
+  "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
   "interface": {
     "capabilities": [],
     "category": "Productivity",
@@ -15,7 +15,7 @@
     "developerName": "Sami Halawa",
     "displayName": "BOE Impact",
     "logo": "./assets/logo.png",
-    "longDescription": "Find and compare BOE text versions at article level, retaining source dates and legal applicability limits.\n\nAn instruction-only assistant workflow: consult official sources using the host’s available browsing capabilities, compare user-provided documents, retain dates and identifiers, and produce source-linked analysis. A labelled historical example is included.\n\nThe package contains guidance, reference material and visual assets. Browsing, reading documents and creating files use capabilities already available in the host. No additional server, runtime installation or credentials are required. Source access and complete coverage must be verified for each task; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+    "longDescription": "Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "shortDescription": "Trace changes in Spanish law",
     "websiteURL": "https://samihalawa.github.io/boe-impact/",
     "supportURL": "https://github.com/samihalawa/boe-impact/blob/main/SUPPORT.md",
@@ -34,6 +34,6 @@
   "license": "MIT",
   "name": "boe-impact",
   "skills": "./skills",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "homepage": "https://samihalawa.github.io/boe-impact/"
 }

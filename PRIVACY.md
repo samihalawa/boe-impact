@@ -1,15 +1,11 @@
-# Privacidad — BOE Impact
+# Privacidad — BOE Impact 0.6.0
 
-Esta edición contiene instrucciones, referencias y ejemplos históricos. No incluye un servicio de ejecución ni un punto de recepción de consultas del editor. Las instrucciones no incorporan telemetría, seguimiento ni una caché de consultas propios.
+Editor y operador del conector: Sami Halawa. Contacto: sami@samihalawa.com.
 
-El asistente utiliza únicamente la navegación y lectura de archivos nativas disponibles y autorizadas en su anfitrión, o los documentos que facilite el usuario. Si navega, el buscador y las fuentes visitadas pueden recibir los términos públicos necesarios y la dirección de red de ese entorno. Minimiza esos términos. No envíes la conversación, documentos íntegros, perfiles personales ni credenciales a fuentes externas para una búsqueda pública.
+El anfitrión envía por HTTPS los argumentos necesarios a `https://aiplugins.megawebs.com/mcp/boe-impact`. El servicio recibe términos de búsqueda, identificadores públicos, filtros y metadatos técnicos de conexión. Consulta proveedores oficiales para responder; esos proveedores reciben las consultas y la dirección de red del servicio según sus propias prácticas. No envíes contraseñas, conversaciones completas, documentos privados ni datos personales innecesarios como argumentos.
 
-La conversación, los documentos y los informes que se guarden se conservan conforme a las opciones y políticas del anfitrión y del usuario. El editor no puede imponer plazos de borrado en sistemas ajenos ni garantizar que el anfitrión no registre su actividad. El alojamiento de la documentación pública tiene sus propias políticas y registros.
+El código del conector ejecuta consultas públicas de solo lectura. No incorpora cuentas de usuario, pagos, analítica publicitaria ni una base de datos de conversaciones. El adaptador puede mantener temporalmente respuestas de fuentes en memoria durante su ejecución; no configura una caché de consultas en disco. El alojamiento, proxy y proveedores pueden conservar registros técnicos según su configuración y políticas. No se afirma un plazo de borrado ni ausencia de registros en esos sistemas.
 
-Las publicaciones oficiales pueden contener nombres, direcciones u otros datos personales públicos. Su publicación no autoriza perfiles personales, prospección ni reutilización indiscriminada. Comparte solo lo pertinente para la petición y respeta las condiciones de la fuente.
+El anfitrión conserva conversaciones, documentos, respuestas y archivos según sus propias opciones. El conector no controla esa conservación. Para una consulta sobre datos procesados por el servicio, escribe al contacto indicado con un ejemplo mínimo y sin secretos; para datos conservados por el anfitrión o una fuente oficial, utiliza sus canales correspondientes.
 
-Las capturas incluidas son históricas, con fechas y procedencia preservadas. No son registros de actividad actual del usuario. No pidas identidades, datos bancarios o acceso protegido para ampliar esta habilidad.
-
-La consolidación es informativa. La habilidad no determina automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica las publicaciones originales para decisiones jurídicas.
-
-Contacto: sami@samihalawa.com. No envíes información confidencial para una consulta de soporte.
+Los registros oficiales pueden contener datos personales públicos y condiciones de reutilización. Comparte solo lo pertinente. Los ejemplos incluidos son históricos. Las páginas estáticas del paquete no incorporan cuentas ni analítica del editor; GitHub Pages, cuando las aloja, aplica sus propias políticas de conexión.

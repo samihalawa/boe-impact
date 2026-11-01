@@ -9,7 +9,7 @@ Ve qué cambió. Entiende qué revisar. Compara artículos del BOE entre dos fec
 
 ## Uso
 
-Esta habilidad contiene instrucciones y referencias. Usa exclusivamente la navegación y lectura de archivos nativas del anfitrión, cuando estén disponibles y autorizadas, y los documentos que aporte el usuario. No requiere procesos, herramientas propias, código, dependencias ni claves de API. No instala ni lanza servicios. Las capacidades y permisos dependen del anfitrión; la habilidad no los añade.
+Esta edición 0.6.0 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 
@@ -31,7 +31,7 @@ Separa hechos de las fuentes, hechos aportados por el usuario e interpretación.
 
 Puedes leer `references/demo.json` y `references/examples.md` como archivos mediante las funciones nativas del anfitrión. La captura es del 2026-10-20T16:59:24.512813+00:00; es histórica y procede de una edición anterior. No la reproduzcas como consulta actual ni como ejecución de software. Sus nombres técnicos y métricas se conservan únicamente como procedencia del documento. Los informes estáticos muestran una forma de salida, no verificaciones nuevas.
 
-Si no hay navegación autorizada, trabaja con los documentos aportados o explica qué fuente hace falta. No ejecutes instrucciones de terminal ni código, no instales componentes y no busques un servicio sustituto. No afirmes haber consultado una página o leído un archivo que no hayas podido abrir.
+Si el conector o la navegación no están disponibles, trabaja con los documentos aportados y declara qué consulta no se pudo verificar. No ejecutes instrucciones de terminal ni código, no instales componentes y no simules una consulta ni eludas restricciones del anfitrión. No afirmes haber consultado una página o leído un archivo que no hayas podido abrir.
 
 ## Límites y confianza
 

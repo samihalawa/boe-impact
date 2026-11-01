@@ -2,7 +2,7 @@
   "name": "BOE Impact",
   "promise": "Ve qué cambió. Entiende qué revisar.",
   "audience": "Asesorías y profesionales que trabajan con normas españolas.",
-  "description": "Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.",
+  "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
   "short": "Cambios legales con fuentes",
   "source": "BOE",
   "keywords": [
@@ -25,5 +25,7 @@
   "limits": "La consolidación es informativa. La habilidad no determina automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica las publicaciones originales para decisiones jurídicas.",
   "extra": "Identifica el artículo en la propia norma y compara versiones explícitas. Distingue publicación, vigencia, aplicación transitoria y consulta. Una versión ausente no se sustituye por la actual.",
   "slug": "boe-impact",
-  "version": "0.5.0"
+  "version": "0.6.0",
+  "mode": "hosted-read-only-mcp-with-guidance",
+  "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }
