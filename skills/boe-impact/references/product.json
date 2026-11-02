@@ -25,7 +25,7 @@
   "limits": "La consolidación es informativa. La habilidad no determina automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica las publicaciones originales para decisiones jurídicas.",
   "extra": "Identifica el artículo en la propia norma y compara versiones explícitas. Distingue publicación, vigencia, aplicación transitoria y consulta. Una versión ausente no se sustituye por la actual.",
   "slug": "boe-impact",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }

@@ -17,10 +17,10 @@
     "logo": "./assets/logo.png",
     "longDescription": "Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "shortDescription": "Trace changes in Spanish law",
-    "websiteURL": "https://samihalawa.github.io/boe-impact/",
-    "supportURL": "https://github.com/samihalawa/boe-impact/blob/main/SUPPORT.md",
-    "privacyPolicyURL": "https://github.com/samihalawa/boe-impact/blob/main/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/samihalawa/boe-impact/blob/main/TERMS.md"
+    "websiteURL": "https://aiplugins.megawebs.com/plugins/boe-impact",
+    "supportURL": "https://aiplugins.megawebs.com/plugins/boe-impact/support",
+    "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/boe-impact/privacy",
+    "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/boe-impact/terms"
   },
   "keywords": [
     "spain",
@@ -34,8 +34,8 @@
   "license": "MIT",
   "name": "boe-impact",
   "skills": "./skills",
-  "version": "0.6.0",
-  "homepage": "https://samihalawa.github.io/boe-impact/",
+  "version": "0.6.2",
+  "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "extensions": {
     "com.openai": {
       "review": {

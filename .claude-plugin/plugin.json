@@ -1,7 +1,7 @@
 {
   "name": "boe-impact",
   "displayName": "BOE Impact",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
   "author": {
     "name": "Sami Halawa",
@@ -16,11 +16,11 @@
     "asesorias",
     "comparacion"
   ],
-  "homepage": "https://samihalawa.github.io/boe-impact/",
+  "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "repository": "https://github.com/samihalawa/boe-impact",
   "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/samihalawa/boe-impact/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/boe-impact/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/boe-impact/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/boe-impact/blob/main/TERMS.md"
+  "supportUrl": "https://aiplugins.megawebs.com/plugins/boe-impact/support",
+  "privacyPolicyUrl": "https://aiplugins.megawebs.com/plugins/boe-impact/privacy",
+  "termsOfServiceUrl": "https://aiplugins.megawebs.com/plugins/boe-impact/terms"
 }

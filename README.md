@@ -4,7 +4,7 @@
 
 Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.
 
-**Versión 0.6.0 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.2 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
@@ -23,4 +23,4 @@ No presenta solicitudes u ofertas, no firma, no compra, no consulta datos proteg
 
 Los [ejemplos guardados](examples/demo.md) son capturas históricas de versiones anteriores, no consultas actuales. El historial de 0.5.0 conserva la edición de instrucciones; 0.6.0 añade una conexión remota explícita y no reetiqueta esas capturas. La aprobación en un directorio se verifica por separado.
 
-[Privacidad](PRIVACY.md) · [Condiciones](TERMS.md) · [Soporte](SUPPORT.md)
+[Producto e instalación](https://aiplugins.megawebs.com/plugins/boe-impact) · [Privacidad](https://aiplugins.megawebs.com/plugins/boe-impact/privacy) · [Condiciones](https://aiplugins.megawebs.com/plugins/boe-impact/terms) · [Soporte](https://aiplugins.megawebs.com/plugins/boe-impact/support)

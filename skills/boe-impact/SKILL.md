@@ -9,7 +9,7 @@ Ve qué cambió. Entiende qué revisar. Compara artículos del BOE entre dos fec
 
 ## Uso
 
-Esta edición 0.6.0 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.2 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 
