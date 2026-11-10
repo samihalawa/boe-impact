@@ -1,5 +1,3 @@
-![Icono de BOE Impact](assets/icon.png)
-
 # BOE Impact
 
 Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.
