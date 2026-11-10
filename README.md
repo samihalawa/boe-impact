@@ -4,9 +4,14 @@
 
 Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.
 
-**Versión 0.6.2 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.3 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
+
+```bash
+/plugin install boe-impact --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
+```
+
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/boe-impact` mediante Streamable HTTP y expone `find_spanish_law_articles`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 

@@ -9,14 +9,15 @@
     "category": "Productivity",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Compare two versions of a Spanish legal provision and cite the exact changes.",
-      "Find relevant notices in a BOE issue and separate publication from effective dates."
+      "Localiza el artículo 118 en BOE-A-2017-12902 y cita el enlace oficial.",
+      "Busca «contratos menores» en el texto de BOE-A-2017-12902.",
+      "Localiza el artículo 118 de BOE-A-2017-12902 a fecha de 2019-01-01."
     ],
     "developerName": "Sami Halawa",
     "displayName": "BOE Impact",
     "logo": "./assets/logo.png",
-    "longDescription": "Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
-    "shortDescription": "Trace changes in Spanish law",
+    "longDescription": "Find articles and other blocks within a named consolidated Spanish law from the BOE. Search by heading or text and choose a date for the available version. Get matching block identifiers, excerpts and official source links for checking the wording before a comparison.",
+    "shortDescription": "Find articles in Spanish laws",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/boe-impact",
     "supportURL": "https://aiplugins.megawebs.com/plugins/boe-impact/support",
     "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/boe-impact/privacy",
@@ -34,7 +35,7 @@
   "license": "MIT",
   "name": "boe-impact",
   "skills": "./skills",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "extensions": {
     "com.openai": {

@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
-    "version": "0.6.2"
+    "version": "0.6.3"
   },
   "plugins": [
     {
       "name": "boe-impact",
       "source": "./",
       "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
-      "version": "0.6.2"
+      "version": "0.6.3"
     }
   ]
 }

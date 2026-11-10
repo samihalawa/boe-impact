@@ -5,59 +5,58 @@
   "positive": [
     {
       "id": "positive-1",
-      "prompt": "Localiza los artículos sobre contratos menores en BOE-A-2017-12902.",
-      "tool": "find_spanish_law_articles",
-      "arguments": {
-        "law_id": "BOE-A-2017-12902",
-        "query": "contratos menores",
-        "search_text": true
-      },
-      "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
-    },
-    {
-      "id": "positive-2",
-      "prompt": "Busca el artículo 118 en BOE-A-2017-12902 y conserva el enlace oficial.",
+      "prompt": "Localiza el artículo 118 en BOE-A-2017-12902 y cita el identificador de bloque y el enlace oficial.",
       "tool": "find_spanish_law_articles",
       "arguments": {
         "law_id": "BOE-A-2017-12902",
         "query": "Artículo 118"
       },
-      "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
+      "expected_behavior": "Return article 118, block a1-30, its selected version and the official BOE consolidated-text source. If the source fails or only some sources respond, state the available coverage."
+    },
+    {
+      "id": "positive-2",
+      "prompt": "Busca en el texto de BOE-A-2017-12902 la expresión «contratos menores», con un máximo de tres resultados.",
+      "tool": "find_spanish_law_articles",
+      "arguments": {
+        "law_id": "BOE-A-2017-12902",
+        "query": "contratos menores",
+        "search_text": true,
+        "limit": 3
+      },
+      "expected_behavior": "Use text search and return no more than three matching blocks with excerpts, their identifiers and the official source. Report the next offset if available. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-3",
-      "prompt": "Busca contratos en el texto de BOE-A-2017-12902, no solo en títulos.",
+      "prompt": "Localiza el artículo 118 de BOE-A-2017-12902 a fecha de 2019-01-01 e indica la versión recuperada.",
       "tool": "find_spanish_law_articles",
       "arguments": {
         "law_id": "BOE-A-2017-12902",
-        "query": "contratos",
-        "search_text": true
+        "query": "Artículo 118",
+        "as_of": "2019-01-01"
       },
-      "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
+      "expected_behavior": "Give the version selected for 1 January 2019 and distinguish its publication and effective dates when returned. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-4",
-      "prompt": "Localiza hasta tres bloques sobre adjudicación en BOE-A-2017-12902.",
+      "prompt": "En los títulos de BOE-A-2017-12902 busca «Artículo», saltando el primer resultado y devolviendo como máximo dos bloques.",
       "tool": "find_spanish_law_articles",
       "arguments": {
         "law_id": "BOE-A-2017-12902",
-        "query": "adjudicación",
-        "limit": 3,
-        "search_text": true
+        "query": "Artículo",
+        "offset": 1,
+        "limit": 2
       },
-      "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
+      "expected_behavior": "Search titles with offset 1 and limit 2. Give the matched block IDs and the next offset if the search found more matches. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-5",
-      "prompt": "Localiza artículos sobre contratos en BOE-A-2017-12902 a fecha 2024-01-01, mostrando la versión utilizada.",
+      "prompt": "Busca «teletransporte» solo en los títulos de BOE-A-2017-12902 e indica el alcance de la búsqueda.",
       "tool": "find_spanish_law_articles",
       "arguments": {
         "law_id": "BOE-A-2017-12902",
-        "query": "contratos",
-        "as_of": "2024-01-01",
-        "search_text": true
+        "query": "teletransporte"
       },
-      "expected_behavior": "Call find_spanish_law_articles using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Locate article identifiers inside a named BOE consolidated law by title or text; comparisons and applicability require further document review."
+      "expected_behavior": "If the official source responds successfully, report zero matching titles in this named law and cite the source. If the source fails or only some sources respond, state the available coverage."
     }
   ],
   "negative": [
@@ -65,19 +64,19 @@
       "id": "negative-1",
       "prompt": "Certifica que mi contrato cumple toda la legislación.",
       "prohibited_tool": "find_spanish_law_articles",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion."
+      "expected_behavior": "Conformity requires a separate assessment of the facts and applicable law. Explain that article lookup cannot certify contract compliance. Do not call find_spanish_law_articles for this request."
     },
     {
       "id": "negative-2",
       "prompt": "Presenta un recurso administrativo por mí.",
       "prohibited_tool": "find_spanish_law_articles",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion."
+      "expected_behavior": "An administrative appeal is a filing. Explain that this plugin locates BOE articles and does not submit an appeal. Do not call find_spanish_law_articles for this request."
     },
     {
       "id": "negative-3",
       "prompt": "Vigila automáticamente el BOE cada día.",
       "prohibited_tool": "find_spanish_law_articles",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking find_spanish_law_articles or claiming completion."
+      "expected_behavior": "The lookup is initiated by the user. Explain that the plugin can perform a bounded search when asked and does not schedule monitoring. Do not call find_spanish_law_articles for this request."
     }
   ]
 }
