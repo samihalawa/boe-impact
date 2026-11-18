@@ -1,7 +1,7 @@
 {
   "name": "boe-impact",
   "interface": {
-    "displayName": "BOE Impact"
+    "displayName": "Spain Laws & BOE"
   },
   "plugins": [
     {
@@ -14,7 +14,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Productivity"
+      "category": "Education & Research"
     }
   ]
 }

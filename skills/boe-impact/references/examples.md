@@ -1,4 +1,4 @@
-# Ejemplos y escenarios de revisión — BOE Impact
+# Ejemplos históricos y escenarios — Spain Laws & BOE
 
 Pide: «Compara el artículo 118 de la Ley de Contratos entre estas dos fechas y separa el cambio textual de su aplicación». Usa exclusivamente versiones identificadas, no una reconstrucción. demo.json conserva una muestra fechada de una edición anterior; sus textos, fechas y enlaces son históricos, no prueba de vigencia actual.
 

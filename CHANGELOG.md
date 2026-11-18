@@ -1,5 +1,10 @@
 # Historial de versiones
 
+## 0.6.4
+
+- Presenta el producto como Spain Laws & BOE con descripciones de tareas y ejemplos en español e inglés.
+- Alinea la ficha, los manifiestos compatibles y las instrucciones de selección; conserva identidad técnica, herramientas y cobertura.
+
 ## 0.6.2
 
 - Centraliza las páginas del producto, privacidad, condiciones y soporte en Megawebs Plugins. Las consultas y herramientas no cambian.

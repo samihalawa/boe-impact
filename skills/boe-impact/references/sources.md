@@ -1,4 +1,4 @@
-# Fuentes oficiales — BOE Impact
+# Fuentes oficiales — Spain Laws & BOE
 
 - [BOE open-data API and reuse conditions](https://www.boe.es/datosabiertos/api/api.php)
 - [BOE legislation](https://www.boe.es/buscar/legislacion.php)

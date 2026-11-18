@@ -1,4 +1,4 @@
-# Revisión — BOE Impact 0.6.2
+# Revisión — Spain Laws & BOE 0.6.4
 
 Paquete remoto con una herramienta: `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Casos: cinco positivos y tres negativos en `plugin.json`. Las variantes cubren entradas o límites distintos; las fuentes dinámicas pueden devolver errores o cobertura parcial, que deben declararse sin fabricar resultados.
 
@@ -8,4 +8,4 @@ No se modifica ni se retira una revisión anterior. Añadir MCP a una ficha de O
 
 ## Identidad inicial de OpenAI para el conector
 
-El portal de OpenAI no permite añadir, quitar ni sustituir servidores MCP en un plugin existente. Para conservar la ficha anterior de solo instrucciones, la entrega inicial del conector utiliza `boe-impact-mcp-0.6.2.zip`, cuyo único cambio respecto de `boe-impact-0.6.2.zip` es `plugin.json.name`: `boe-impact-mcp`. El nombre mostrado sigue siendo BOE Impact; la habilidad, sus rutas, el endpoint acotado y la identidad pública del producto permanecen iguales. El manifiesto canónico del producto conserva `boe-impact`. Esta correspondencia es específica de la entrega inicial en OpenAI y no declara aprobación ni publicación.
+El portal de OpenAI no permite añadir, quitar ni sustituir servidores MCP en un plugin existente. Para conservar la ficha anterior de solo instrucciones, la entrega inicial del conector utiliza `boe-impact-mcp-0.6.2.zip`, cuyo único cambio respecto de `boe-impact-0.6.2.zip` es `plugin.json.name`: `boe-impact-mcp`. El nombre mostrado sigue siendo Spain Laws & BOE; la habilidad, sus rutas, el endpoint acotado y la identidad pública del producto permanecen iguales. El manifiesto canónico del producto conserva `boe-impact`. Esta correspondencia es específica de la entrega inicial en OpenAI y no declara aprobación ni publicación.

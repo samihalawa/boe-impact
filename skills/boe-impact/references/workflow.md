@@ -1,4 +1,4 @@
-# Procedimiento — BOE Impact
+# Procedimiento — Spain Laws & BOE
 
 1. Identifica la norma, su identificador BOE y el artículo o apartado solicitado. Si faltan, usa el buscador oficial con navegación autorizada o los documentos aportados. En un sumario diario, declara la fecha y secciones revisadas: no es una búsqueda de toda la legislación. Lee el índice de la norma antes de elegir un artículo; no inventes identificadores ni referencias.
 2. Fija las dos fechas de comparación y localiza las versiones correspondientes en la fuente oficial. Conserva número de artículo, versión, fecha de publicación y enlace a cada texto. Si solo hay un PDF o una versión aportada, explica qué comparación permite. Si no se encuentra la versión solicitada, no la sustituyas por la actual ni reconstruyas el texto de memoria.

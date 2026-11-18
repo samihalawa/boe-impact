@@ -1,21 +1,24 @@
 {
-  "name": "BOE Impact",
+  "name": "Spain Laws & BOE",
   "promise": "Ve qué cambió. Entiende qué revisar.",
   "audience": "Asesorías y profesionales que trabajan con normas españolas.",
-  "description": "Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.",
-  "short": "Cambios legales con fuentes",
+  "description": "Find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version.",
+  "short": "Leyes y artículos del BOE",
   "source": "BOE",
   "keywords": [
-    "boe",
-    "legislacion",
-    "cambios-normativos",
-    "asesorias",
-    "comparacion"
+    "spain",
+    "spanish law",
+    "legislation",
+    "regulations",
+    "leyes",
+    "normativa",
+    "artículos",
+    "BOE"
   ],
   "prompts": [
-    "Compara un artículo entre dos fechas y muéstrame el antes, el después y la fuente.",
-    "Revisa esta norma: distingue publicación, entrada en vigor y régimen transitorio.",
-    "Enséñame una comparación guardada y explica qué no verifica."
+    "Find articles about minor contracts in BOE-A-2017-12902.",
+    "Busca el artículo 118 en la Ley de Contratos del Sector Público, BOE-A-2017-12902.",
+    "Busca artículos sobre arrendamientos en BOE-A-1994-26003 y cita el BOE."
   ],
   "benefits": [
     "Textos anteriores y posteriores con versiones y fuentes identificadas.",
@@ -25,7 +28,7 @@
   "limits": "La consolidación es informativa. La habilidad no determina automáticamente aplicabilidad, régimen transitorio o conformidad legal. Verifica las publicaciones originales para decisiones jurídicas.",
   "extra": "Identifica el artículo en la propia norma y compara versiones explícitas. Distingue publicación, vigencia, aplicación transitoria y consulta. Una versión ausente no se sustituye por la actual.",
   "slug": "boe-impact",
-  "version": "0.6.2",
+  "version": "0.6.4",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }

@@ -4,23 +4,23 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Localiza identificadores de art\u00edculos en una norma consolidada del BOE por t\u00edtulo o texto; la comparaci\u00f3n y aplicabilidad requieren revisi\u00f3n documental adicional.",
+  "description": "Find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version.",
   "extensions": {
     "com.openai": {
       "interface": {
         "capabilities": [],
-        "category": "Productivity",
+        "category": "Education & Research",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Localiza el art\u00edculo 118 en BOE-A-2017-12902 y cita el enlace oficial.",
-          "Busca \u00abcontratos menores\u00bb en el texto de BOE-A-2017-12902.",
-          "Localiza el art\u00edculo 118 de BOE-A-2017-12902 a fecha de 2019-01-01."
+          "Find articles about minor contracts in BOE-A-2017-12902.",
+          "Busca el artículo 118 en la Ley de Contratos del Sector Público, BOE-A-2017-12902.",
+          "Busca artículos sobre arrendamientos en BOE-A-1994-26003 y cita el BOE."
         ],
         "developerName": "Sami Halawa",
-        "displayName": "BOE Impact",
+        "displayName": "Spain Laws & BOE",
         "logo": "./assets/logo.png",
-        "longDescription": "Find articles and other blocks within a named consolidated Spanish law from the BOE. Search by heading or text and choose a date for the available version. Get matching block identifiers, excerpts and official source links for checking the wording before a comparison.",
-        "shortDescription": "Find articles in Spanish laws",
+        "longDescription": "Find the article you need in a Spanish law or regulation. Search headings or text inside a named consolidated law from the official BOE, using its BOE identifier. Retrieve matching article or block identifiers, excerpts and official links, with an optional date for the available version. Use the results to inspect wording, locate relevant provisions and prepare comparisons between versions. The connector locates articles; interpreting changes and applicability requires reading the relevant texts. It does not determine legal compliance or set up alerts.",
+        "shortDescription": "Find Spanish laws and articles",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/boe-impact",
         "supportURL": "https://aiplugins.megawebs.com/plugins/boe-impact/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/boe-impact/privacy",
@@ -28,9 +28,9 @@
       },
       "review": {
         "prompts": [
-          "Localiza el art\u00edculo 118 en BOE-A-2017-12902 y cita el identificador de bloque y el enlace oficial.",
-          "Busca en el texto de BOE-A-2017-12902 la expresi\u00f3n \u00abcontratos menores\u00bb, con un m\u00e1ximo de tres resultados.",
-          "Localiza el art\u00edculo 118 de BOE-A-2017-12902 a fecha de 2019-01-01 e indica la versi\u00f3n recuperada."
+          "Localiza el artículo 118 en BOE-A-2017-12902 y cita el identificador de bloque y el enlace oficial.",
+          "Busca en el texto de BOE-A-2017-12902 la expresión «contratos menores», con un máximo de tres resultados.",
+          "Localiza el artículo 118 de BOE-A-2017-12902 a fecha de 2019-01-01 e indica la versión recuperada."
         ],
         "commerce": false,
         "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
@@ -38,31 +38,31 @@
           "positive": [
             {
               "description": "Find a known article by heading",
-              "prompt": "Localiza el art\u00edculo 118 en BOE-A-2017-12902 y cita el identificador de bloque y el enlace oficial.",
+              "prompt": "Localiza el artículo 118 en BOE-A-2017-12902 y cita el identificador de bloque y el enlace oficial.",
               "tools_triggered": "find_spanish_law_articles",
               "expected_behavior": "Return article 118, block a1-30, its selected version and the official BOE consolidated-text source. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Search article content",
-              "prompt": "Busca en el texto de BOE-A-2017-12902 la expresi\u00f3n \u00abcontratos menores\u00bb, con un m\u00e1ximo de tres resultados.",
+              "prompt": "Busca en el texto de BOE-A-2017-12902 la expresión «contratos menores», con un máximo de tres resultados.",
               "tools_triggered": "find_spanish_law_articles",
               "expected_behavior": "Use text search and return no more than three matching blocks with excerpts, their identifiers and the official source. Report the next offset if available. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Select a historical version",
-              "prompt": "Localiza el art\u00edculo 118 de BOE-A-2017-12902 a fecha de 2019-01-01 e indica la versi\u00f3n recuperada.",
+              "prompt": "Localiza el artículo 118 de BOE-A-2017-12902 a fecha de 2019-01-01 e indica la versión recuperada.",
               "tools_triggered": "find_spanish_law_articles",
               "expected_behavior": "Give the version selected for 1 January 2019 and distinguish its publication and effective dates when returned. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Continue a bounded title search",
-              "prompt": "En los t\u00edtulos de BOE-A-2017-12902 busca \u00abArt\u00edculo\u00bb, saltando el primer resultado y devolviendo como m\u00e1ximo dos bloques.",
+              "prompt": "En los títulos de BOE-A-2017-12902 busca «Artículo», saltando el primer resultado y devolviendo como máximo dos bloques.",
               "tools_triggered": "find_spanish_law_articles",
               "expected_behavior": "Search titles with offset 1 and limit 2. Give the matched block IDs and the next offset if the search found more matches. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Report no matching heading within one law",
-              "prompt": "Busca \u00abteletransporte\u00bb solo en los t\u00edtulos de BOE-A-2017-12902 e indica el alcance de la b\u00fasqueda.",
+              "prompt": "Busca «teletransporte» solo en los títulos de BOE-A-2017-12902 e indica el alcance de la búsqueda.",
               "tools_triggered": "find_spanish_law_articles",
               "expected_behavior": "If the official source responds successfully, report zero matching titles in this named law and cite the source. If the source fails or only some sources respond, state the available coverage."
             }
@@ -70,26 +70,26 @@
           "negative": [
             {
               "description": "Conformity requires a separate assessment of the facts and applicable law. Explain that article lookup cannot certify contract compliance. Do not call find_spanish_law_articles for this request.",
-              "prompt": "Certifica que mi contrato cumple toda la legislaci\u00f3n."
+              "prompt": "Certifica que mi contrato cumple toda la legislación."
             },
             {
               "description": "An administrative appeal is a filing. Explain that this plugin locates BOE articles and does not submit an appeal. Do not call find_spanish_law_articles for this request.",
-              "prompt": "Presenta un recurso administrativo por m\u00ed."
+              "prompt": "Presenta un recurso administrativo por mí."
             },
             {
               "description": "The lookup is initiated by the user. Explain that the plugin can perform a bounded search when asked and does not schedule monitoring. Do not call find_spanish_law_articles for this request.",
-              "prompt": "Vigila autom\u00e1ticamente el BOE cada d\u00eda."
+              "prompt": "Vigila automáticamente el BOE cada día."
             }
           ]
         },
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Adds review examples for dated BOE text, heading searches and result pagination.",
+        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
         "translations": {
           "es-ES": {
-            "subtitle": "Cambios legales con fuentes",
-            "description": "Localiza art\u00edculos y otros bloques de una norma consolidada del BOE. Busca por t\u00edtulo o texto y elige una fecha para la versi\u00f3n disponible. Obt\u00e9n identificadores de bloque, fragmentos y enlaces oficiales para comprobar la redacci\u00f3n antes de compararla."
+            "subtitle": "Leyes y artículos del BOE",
+            "description": "Encuentra el artículo que necesitas en una ley o norma española. Busca por título o texto dentro de una norma consolidada del BOE con su identificador oficial. Obtén artículos o bloques, extractos y enlaces, con una fecha opcional para la versión disponible. Los resultados ayudan a revisar la redacción y preparar comparaciones. El conector localiza artículos; la interpretación de cambios y su aplicación requiere leer los textos pertinentes. No determina cumplimiento legal ni activa alertas."
           }
         }
       }
@@ -97,16 +97,17 @@
   },
   "keywords": [
     "spain",
-    "claude-plugin",
-    "boe",
-    "legislacion",
-    "cambios-normativos",
-    "asesorias",
-    "comparacion"
+    "spanish law",
+    "legislation",
+    "regulations",
+    "leyes",
+    "normativa",
+    "artículos",
+    "BOE"
   ],
   "license": "MIT",
   "name": "boe-impact",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "repository": "https://github.com/samihalawa/boe-impact"
 }

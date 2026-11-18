@@ -1,6 +1,6 @@
 > Documento histórico de una edición anterior. Conserva sus datos, fecha y procedencia; no es una consulta actual ni una función de ejecución de esta habilidad.
 
-# BOE Impact
+# Spain Laws & BOE — ejemplo histórico
 
 Ve qué cambió. Entiende qué revisar.
 

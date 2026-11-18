@@ -1,15 +1,15 @@
 ---
 name: boe-impact
-description: "Localizar publicaciones del BOE, comparar el texto de una disposición entre dos fechas y separar el cambio literal de las posibles consecuencias para una actividad."
+description: "Use when the user wants to find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version."
 ---
 
-# BOE Impact
+# Spain Laws & BOE
 
 Ve qué cambió. Entiende qué revisar. Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.
 
 ## Uso
 
-Esta edición 0.6.2 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.4 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 
