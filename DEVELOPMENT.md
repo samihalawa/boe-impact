@@ -1,4 +1,4 @@
-# Desarrollo — Spain Laws & BOE 0.6.5
+# Desarrollo — Spain Laws & BOE 0.6.6
 
 El paquete configura un MCP remoto Streamable HTTP; no contiene un servidor Python local. Contrato: `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. El servidor compartido se mantiene en `connectors/spain-assistant-mcp-apps` del repositorio privado maestro.
 

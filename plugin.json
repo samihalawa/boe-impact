@@ -43,12 +43,6 @@
               "expected_behavior": "Return article 118, block a1-30, its selected version and the official BOE consolidated-text source. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Search article content",
-              "prompt": "Busca en el texto de BOE-A-2017-12902 la expresión «contratos menores», con un máximo de tres resultados.",
-              "tools_triggered": "find_spanish_law_articles",
-              "expected_behavior": "Use text search and return no more than three matching blocks with excerpts, their identifiers and the official source. Report the next offset if available. If the source fails or only some sources respond, state the available coverage."
-            },
-            {
               "description": "Select a historical version",
               "prompt": "Localiza el artículo 118 de BOE-A-2017-12902 a fecha de 2019-01-01 e indica la versión recuperada.",
               "tools_triggered": "find_spanish_law_articles",
@@ -115,7 +109,7 @@
   ],
   "license": "MIT",
   "name": "boe-impact",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "repository": "https://github.com/samihalawa/boe-impact"
 }

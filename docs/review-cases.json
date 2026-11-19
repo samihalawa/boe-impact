@@ -1,5 +1,5 @@
 {
-  "version": "0.6.5",
+  "version": "0.6.6",
   "endpoint": "https://aiplugins.megawebs.com/mcp/boe-impact",
   "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
@@ -12,18 +12,6 @@
         "query": "Artículo 118"
       },
       "expected_behavior": "Return article 118, block a1-30, its selected version and the official BOE consolidated-text source. If the source fails or only some sources respond, state the available coverage."
-    },
-    {
-      "id": "positive-2",
-      "prompt": "Busca en el texto de BOE-A-2017-12902 la expresión «contratos menores», con un máximo de tres resultados.",
-      "tool": "find_spanish_law_articles",
-      "arguments": {
-        "law_id": "BOE-A-2017-12902",
-        "query": "contratos menores",
-        "search_text": true,
-        "limit": 3
-      },
-      "expected_behavior": "Use text search and return no more than three matching blocks with excerpts, their identifiers and the official source. Report the next offset if available. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-3",

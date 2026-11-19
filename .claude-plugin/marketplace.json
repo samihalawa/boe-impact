@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.",
-    "version": "0.6.5"
+    "version": "0.6.6"
   },
   "plugins": [
     {
       "name": "boe-impact",
       "source": "./",
       "description": "Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.",
-      "version": "0.6.5"
+      "version": "0.6.6"
     }
   ]
 }
