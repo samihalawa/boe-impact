@@ -1,15 +1,20 @@
 ---
 name: boe-impact
-description: "Use when the user wants to find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version."
+description: "Use when the user wants to find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording."
 ---
 
 # Spain Laws & BOE
 
-Ve qué cambió. Entiende qué revisar. Compara artículos del BOE entre dos fechas y separa el cambio textual de sus posibles implicaciones prácticas.
+Encuentra el artículo de la ley y consulta su fuente. Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.
+## Primera consulta y resultado útil
+
+Si ya hay identificador BOE y tema, consulta la herramienta directamente. Si solo se aporta el nombre de la ley, verifica el identificador en una fuente oficial con las capacidades disponibles; no lo inventes. Primero localiza el artículo; compara versiones solo si la petición lo requiere y los textos están disponibles. Usa la herramienta MCP para su consulta soportada; si su respuesta ya resuelve la petición, no repitas esa búsqueda en el navegador. Abre documentos adicionales solo cuando la pregunta o una laguna material lo requieran. Reutiliza el contexto; pregunta solo por un dato esencial que no puedas resolver con la información o fuentes disponibles.
+
+Entrega primero la respuesta o comparación que pidió el usuario, con una tabla breve cuando ayude. Conserva enlaces oficiales, fechas, identificadores y unidades relevantes; explica los límites que cambien la interpretación junto al dato afectado. El resultado debe poder reutilizarse desde la conversación, sin publicidad, llamadas a contratar ni recomendaciones ajenas a la tarea. Propón una continuación solo cuando ayude a resolver la petición; no actives alertas, seguimiento ni funciones que no se hayan ejecutado.
 
 ## Uso
 
-Esta edición 0.6.4 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.5 incluye el conector MCP alojado `find_spanish_law_articles` en `https://aiplugins.megawebs.com/mcp/boe-impact`. Úsalo para su consulta pública de solo lectura: Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 

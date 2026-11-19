@@ -1,4 +1,4 @@
-# Acceso al conector — Spain Laws & BOE 0.6.4
+# Acceso al conector — Spain Laws & BOE 0.6.5
 
 Endpoint MCP Streamable HTTP: `https://aiplugins.megawebs.com/mcp/boe-impact`. Herramienta: `find_spanish_law_articles`. Localiza identificadores de artículos en una norma consolidada del BOE por título o texto; la comparación y aplicabilidad requieren revisión documental adicional.
 

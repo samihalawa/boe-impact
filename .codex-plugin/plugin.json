@@ -3,21 +3,21 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version.",
+  "description": "Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.",
   "interface": {
     "capabilities": [],
     "category": "Education & Research",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Find articles about minor contracts in BOE-A-2017-12902.",
-      "Busca el artículo 118 en la Ley de Contratos del Sector Público, BOE-A-2017-12902.",
-      "Busca artículos sobre arrendamientos en BOE-A-1994-26003 y cita el BOE."
+      "¿Qué dice el artículo 118 de la Ley de Contratos del Sector Público, BOE-A-2017-12902?",
+      "Find provisions about minor contracts in Spanish law BOE-A-2017-12902.",
+      "Localiza artículos sobre arrendamientos en BOE-A-1994-26003 y enlaza el texto del BOE."
     ],
     "developerName": "Sami Halawa",
     "displayName": "Spain Laws & BOE",
     "logo": "./assets/logo.png",
-    "longDescription": "Find the article you need in a Spanish law or regulation. Search headings or text inside a named consolidated law from the official BOE, using its BOE identifier. Retrieve matching article or block identifiers, excerpts and official links, with an optional date for the available version. Use the results to inspect wording, locate relevant provisions and prepare comparisons between versions. The connector locates articles; interpreting changes and applicability requires reading the relevant texts. It does not determine legal compliance or set up alerts.",
-    "shortDescription": "Find Spanish laws and articles",
+    "longDescription": "Find the article you need in a law or regulation from Spain (España). Search headings or full text inside a consolidated BOE law using its verified identifier. Get matching article or block identifiers, available version details, excerpts and original links. Useful for checking wording and locating the provisions to read. Comparing changes or applicability requires the relevant texts and additional review. The connector searches within a named law; it does not find every law from a topic, determine legal compliance or set up alerts.",
+    "shortDescription": "Spanish laws and BOE articles",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/boe-impact",
     "supportURL": "https://aiplugins.megawebs.com/plugins/boe-impact/support",
     "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/boe-impact/privacy",
@@ -25,6 +25,8 @@
   },
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "spanish law",
     "legislation",
     "regulations",
@@ -36,7 +38,7 @@
   "license": "MIT",
   "name": "boe-impact",
   "skills": "./skills",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "extensions": {
     "com.openai": {

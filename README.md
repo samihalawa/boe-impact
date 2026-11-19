@@ -1,22 +1,21 @@
 # Spain Laws & BOE
 
-Find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version.
+Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.
 
-**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.5 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
-```bash
-/plugin install boe-impact --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
-```
+Instalación y conexión: [abrir la página del producto](https://aiplugins.megawebs.com/plugins/boe-impact). Elige allí las instrucciones del anfitrión que utilices.
 
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/boe-impact` mediante Streamable HTTP y expone `find_spanish_law_articles`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
-> Localiza los artículos sobre contratos menores en BOE-A-2017-12902.
+> ¿Qué dice el artículo 118 de la Ley de Contratos del Sector Público, BOE-A-2017-12902?
 
-- Busca el artículo 118 en BOE-A-2017-12902 y conserva el enlace oficial.
-- Busca contratos en el texto de BOE-A-2017-12902, no solo en títulos.
+- Find provisions about minor contracts in Spanish law BOE-A-2017-12902.
+- Localiza artículos sobre arrendamientos en BOE-A-1994-26003 y enlaza el texto del BOE.
+
 
 Lee [la habilidad](skills/boe-impact/SKILL.md) para el procedimiento, [las fuentes](skills/boe-impact/references/sources.md) y [el contrato de acceso](skills/boe-impact/references/runtime.md). La herramienta realiza la consulta acotada descrita; la lectura de documentos, interpretación y creación de archivos usan capacidades adicionales del anfitrión. Conserva los identificadores, enlaces, fechas y límites realmente devueltos.
 

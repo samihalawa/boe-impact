@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Find articles in Spanish laws and regulations (leyes y normativa) using the official BOE. Search a named consolidated law by heading or text and link the available dated version.",
+  "description": "Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,15 +12,15 @@
         "category": "Education & Research",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Find articles about minor contracts in BOE-A-2017-12902.",
-          "Busca el artículo 118 en la Ley de Contratos del Sector Público, BOE-A-2017-12902.",
-          "Busca artículos sobre arrendamientos en BOE-A-1994-26003 y cita el BOE."
+          "¿Qué dice el artículo 118 de la Ley de Contratos del Sector Público, BOE-A-2017-12902?",
+          "Find provisions about minor contracts in Spanish law BOE-A-2017-12902.",
+          "Localiza artículos sobre arrendamientos en BOE-A-1994-26003 y enlaza el texto del BOE."
         ],
         "developerName": "Sami Halawa",
         "displayName": "Spain Laws & BOE",
         "logo": "./assets/logo.png",
-        "longDescription": "Find the article you need in a Spanish law or regulation. Search headings or text inside a named consolidated law from the official BOE, using its BOE identifier. Retrieve matching article or block identifiers, excerpts and official links, with an optional date for the available version. Use the results to inspect wording, locate relevant provisions and prepare comparisons between versions. The connector locates articles; interpreting changes and applicability requires reading the relevant texts. It does not determine legal compliance or set up alerts.",
-        "shortDescription": "Find Spanish laws and articles",
+        "longDescription": "Find the article you need in a law or regulation from Spain (España). Search headings or full text inside a consolidated BOE law using its verified identifier. Get matching article or block identifiers, available version details, excerpts and original links. Useful for checking wording and locating the provisions to read. Comparing changes or applicability requires the relevant texts and additional review. The connector searches within a named law; it does not find every law from a topic, determine legal compliance or set up alerts.",
+        "shortDescription": "Spanish laws and BOE articles",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/boe-impact",
         "supportURL": "https://aiplugins.megawebs.com/plugins/boe-impact/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/boe-impact/privacy",
@@ -65,6 +65,12 @@
               "prompt": "Busca «teletransporte» solo en los títulos de BOE-A-2017-12902 e indica el alcance de la búsqueda.",
               "tools_triggered": "find_spanish_law_articles",
               "expected_behavior": "If the official source responds successfully, report zero matching titles in this named law and cite the source. If the source fails or only some sources respond, state the available coverage."
+            },
+            {
+              "description": "Recognize the user task without naming the plugin",
+              "prompt": "Necesito comprobar cómo se regulan los contratos menores en España: busca ese texto dentro de BOE-A-2017-12902.",
+              "tools_triggered": "find_spanish_law_articles",
+              "expected_behavior": "Use the domain tool for the supplied public inputs without asking for unrelated account or profile information. Answer the requested comparison with returned official links, dates, units and actual coverage. Distinguish partial or failed source access from no matches; do not claim an unsupported feature or current status."
             }
           ],
           "negative": [
@@ -85,11 +91,11 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
+        "release_notes": "Improved Spanish and English discovery, first-use prompts and sourced result guidance across Spain utilities. No new data access, payment features or background monitoring.",
         "translations": {
           "es-ES": {
-            "subtitle": "Leyes y artículos del BOE",
-            "description": "Encuentra el artículo que necesitas en una ley o norma española. Busca por título o texto dentro de una norma consolidada del BOE con su identificador oficial. Obtén artículos o bloques, extractos y enlaces, con una fecha opcional para la versión disponible. Los resultados ayudan a revisar la redacción y preparar comparaciones. El conector localiza artículos; la interpretación de cambios y su aplicación requiere leer los textos pertinentes. No determina cumplimiento legal ni activa alertas."
+            "subtitle": "Leyes y artículos de España",
+            "description": "Datos y consultas de España. Encuentra el artículo que necesitas en una ley o norma española. Busca por título o texto dentro de una norma consolidada del BOE con su identificador oficial. Obtén artículos o bloques, extractos y enlaces, con una fecha opcional para la versión disponible. Los resultados ayudan a revisar la redacción y preparar comparaciones. El conector localiza artículos; la interpretación de cambios y su aplicación requiere leer los textos pertinentes. No determina cumplimiento legal ni activa alertas."
           }
         }
       }
@@ -97,6 +103,8 @@
   },
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "spanish law",
     "legislation",
     "regulations",
@@ -107,7 +115,7 @@
   ],
   "license": "MIT",
   "name": "boe-impact",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "repository": "https://github.com/samihalawa/boe-impact"
 }
