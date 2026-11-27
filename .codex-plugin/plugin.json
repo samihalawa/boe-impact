@@ -38,12 +38,269 @@
   "license": "MIT",
   "name": "boe-impact",
   "skills": "./skills",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "homepage": "https://aiplugins.megawebs.com/plugins/boe-impact",
   "extensions": {
     "com.openai": {
       "review": {
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
+      },
+      "publication": {
+        "translations": {
+          "am": {
+            "subtitle": "የስፔን ሕጎች እና የBOE አንቀጾች",
+            "description": "ከስፔን (España) በወጣ ሕግ ወይም ደንብ ውስጥ የሚፈልጉትን አንቀጽ ያግኙ። የተረጋገጠ መለያውን በመጠቀም በተጠቃለለ የBOE ሕግ ውስጥ ርዕሶችን ወይም ሙሉ ጽሑፍን ይፈልጉ። ተዛማጅ የአንቀጽ ወይም የክፍል መለያዎችን፣ የሚገኙ የእትም ዝርዝሮችን፣ የተወሰዱ ጽሑፎችን እና ኦፊሴላዊ አገናኞችን ያግኙ። ቃላቱን ለመመርመር እና የሚነበቡ ድንጋጌዎችን ለማግኘት ጠቃሚ ነው። ለውጦችን ወይም ተፈጻሚነትን ማነጻጸር አግባብነት ያላቸውን ጽሑፎች እና ተጨማሪ ግምገማን ይጠይቃል። አገናኙ በተሰየመ አንድ ሕግ ውስጥ ይፈልጋል፤ ከአንድ ርዕስ ሁሉንም ሕጎች አያገኝም፣ ሕጋዊ ተገዢነትን አይወስንም ወይም ማንቂያዎችን አያዘጋጅም።"
+          },
+          "ar": {
+            "subtitle": "قوانين إسبانيا ومواد BOE",
+            "description": "اعثر على المادة التي تحتاج إليها في قانون أو لائحة من إسبانيا (España). ابحث في العناوين أو النص الكامل داخل قانون موحّد في BOE باستخدام معرّفه الموثّق. احصل على معرّفات المواد أو الفقرات المطابقة، وتفاصيل الإصدار المتاحة، والمقتطفات والروابط الأصلية. مفيد للتحقق من الصياغة وتحديد الأحكام المراد قراءتها. تتطلب مقارنة التغييرات أو القابلية للتطبيق مراجعة النصوص ذات الصلة وإجراء فحص إضافي. يبحث الموصّل داخل قانون محدّد بالاسم؛ ولا يعثر على كل القوانين انطلاقًا من موضوع، ولا يحدّد الامتثال القانوني أو ينشئ تنبيهات."
+          },
+          "bg-BG": {
+            "subtitle": "Испански закони и членове BOE",
+            "description": "Намерете необходимия ви член в закон или наредба от Испания (España). Търсете в заглавията или пълния текст на консолидиран закон в BOE чрез неговия проверен идентификатор. Получавайте съвпадащите идентификатори на членове или блокове, наличните данни за версията, извадки и оригинални връзки. Полезно за проверка на формулировката и намиране на разпоредбите за четене. Сравняването на промени или приложимостта изисква съответните текстове и допълнителен преглед. Конекторът търси в рамките на посочен закон; не намира всички закони по дадена тема, не определя правно съответствие и не настройва известия."
+          },
+          "bn-BD": {
+            "subtitle": "স্পেনের আইন ও BOE ধারা",
+            "description": "স্পেনের (España) কোনো আইন বা বিধিমালায় আপনার প্রয়োজনীয় ধারাটি খুঁজে বের করুন। যাচাইকৃত শনাক্তকারী ব্যবহার করে BOE-এর সমন্বিত আইনের ভেতরে শিরোনাম বা সম্পূর্ণ পাঠ্য অনুসন্ধান করুন। মিলে যাওয়া ধারা বা ব্লকের শনাক্তকারী, উপলব্ধ সংস্করণের বিবরণ, উদ্ধৃতাংশ এবং মূল লিঙ্ক পান। শব্দচয়ন যাচাই করা এবং পড়ার জন্য বিধানগুলো খুঁজে পেতে এটি কার্যকর। পরিবর্তন বা প্রযোজ্যতা তুলনা করার জন্য প্রাসঙ্গিক পাঠ্য ও অতিরিক্ত পর্যালোচনা প্রয়োজন। এই কানেক্টরটি একটি নির্দিষ্ট আইনের ভেতরেই অনুসন্ধান করে; এটি কোনো বিষয় থেকে সব আইন খুঁজে দেয় না, আইনি সম্মতি নির্ধারণ করে না বা সতর্কতা সেট করে না।"
+          },
+          "bs-BA": {
+            "subtitle": "Španski zakoni i BOE članovi",
+            "description": "Pronađite član koji vam treba u zakonu ili propisu iz Španije (España). Pretražujte naslove ili cijeli tekst unutar konsolidovanog BOE zakona koristeći njegov potvrđeni identifikator. Dobijte odgovarajuće identifikatore članova ili blokova, dostupne podatke o verziji, izvode i izvorne linkove. Korisno za provjeru formulacije i pronalaženje odredbi za čitanje. Poređenje izmjena ili primjenjivosti zahtijeva relevantne tekstove i dodatni pregled. Konektor pretražuje unutar navedenog zakona; ne pronalazi sve zakone po temi, ne utvrđuje pravnu usklađenost niti postavlja obavještenja."
+          },
+          "ca-ES": {
+            "subtitle": "Lleis d'Espanya i articles BOE",
+            "description": "Troba l'article que necessites en una llei o norma d'Espanya. Cerca per títols o text complet dins d'una llei consolidada del BOE mitjançant el seu identificador verificat. Obtén els identificadors d'article o bloc coincidents, els detalls disponibles de la versió, extractes i enllaços originals. Útil per comprovar la redacció i localitzar les disposicions per llegir. Comparar canvis o l'aplicabilitat requereix els textos pertinents i una revisió addicional. El connector cerca dins d'una llei concreta; no troba totes les lleis a partir d'un tema, no determina el compliment legal ni configura alertes."
+          },
+          "cs-CZ": {
+            "subtitle": "Španělské zákony a články BOE",
+            "description": "Najděte článek, který potřebujete, v zákoně nebo nařízení ze Španělska (España). Vyhledávejte v nadpisech nebo plném textu konsolidovaného zákona BOE pomocí jeho ověřeného identifikátoru. Získejte odpovídající identifikátory článků nebo bloků, dostupné údaje o verzi, výňatky a původní odkazy. Užitečné pro ověření znění a vyhledání ustanovení k prostudování. Porovnání změn nebo použitelnosti vyžaduje příslušné texty a další posouzení. Konektor vyhledává v rámci jednoho jmenovaného zákona; nevyhledá všechny zákony podle tématu, neurčuje právní soulad ani nenastavuje upozornění."
+          },
+          "da-DK": {
+            "subtitle": "Spanske love og BOE-artikler",
+            "description": "Find den artikel, du har brug for, i en lov eller bekendtgørelse fra Spanien (España). Søg i overskrifter eller fuldtekst i en konsolideret BOE-lov ved hjælp af dens verificerede identifikator. Få matchende artikel- eller blok-id'er, tilgængelige versionsoplysninger, uddrag og originale links. Nyttigt til at tjekke ordlyden og finde de bestemmelser, der skal læses. Sammenligning af ændringer eller anvendelighed kræver de relevante tekster og yderligere gennemgang. Connectoren søger inden for én navngivet lov; den finder ikke alle love ud fra et emne, afgør ikke juridisk overholdelse og opsætter ikke alarmer."
+          },
+          "de-DE": {
+            "subtitle": "Spaniens Gesetze & BOE-Artikel",
+            "description": "Finden Sie den gewünschten Artikel in einem Gesetz oder einer Vorschrift aus Spanien (España). Durchsuchen Sie Überschriften oder den Volltext innerhalb eines konsolidierten BOE-Gesetzes anhand seiner verifizierten Kennung. Erhalten Sie passende Artikel- oder Blockkennungen, verfügbare Versionsangaben, Auszüge und Originallinks. Nützlich zur Prüfung des Wortlauts und zum Auffinden der zu lesenden Bestimmungen. Der Vergleich von Änderungen oder die Beurteilung der Anwendbarkeit erfordert die jeweiligen Texte und eine weitergehende Prüfung. Der Connector sucht innerhalb eines bestimmten Gesetzes; er findet nicht alle Gesetze zu einem Thema, stellt keine Rechtskonformität fest und richtet keine Benachrichtigungen ein."
+          },
+          "el-GR": {
+            "subtitle": "Ισπανικοί νόμοι & άρθρα BOE",
+            "description": "Βρείτε το άρθρο που χρειάζεστε σε έναν νόμο ή κανονισμό από την Ισπανία (España). Αναζητήστε σε τίτλους ή πλήρες κείμενο μέσα σε έναν ενοποιημένο νόμο του BOE χρησιμοποιώντας το επαληθευμένο αναγνωριστικό του. Λάβετε τα αντίστοιχα αναγνωριστικά άρθρων ή ενοτήτων, διαθέσιμες λεπτομέρειες έκδοσης, αποσπάσματα και πρωτότυπους συνδέσμους. Χρήσιμο για έλεγχο της διατύπωσης και εντοπισμό των διατάξεων προς ανάγνωση. Η σύγκριση αλλαγών ή η εφαρμοσιμότητα απαιτεί τα σχετικά κείμενα και πρόσθετη αξιολόγηση. Ο σύνδεσμος αναζητά εντός ενός κατονομαζόμενου νόμου· δεν βρίσκει όλους τους νόμους από ένα θέμα, δεν κρίνει τη νομική συμμόρφωση ούτε ρυθμίζει ειδοποιήσεις."
+          },
+          "es-419": {
+            "subtitle": "Leyes de España y texto BOE",
+            "description": "Encuentra el artículo que necesitas en una ley o normativa de España. Busca por encabezados o texto completo dentro de una norma consolidada del BOE usando su identificador verificado. Obtén identificadores de artículo o bloque coincidentes, detalles disponibles de la versión, extractos y enlaces originales. Útil para verificar la redacción y ubicar las disposiciones a leer. Comparar cambios o determinar su aplicabilidad requiere los textos pertinentes y revisión adicional. El conector busca dentro de una ley específica; no encuentra todas las leyes de un tema, no determina cumplimiento legal ni configura alertas."
+          },
+          "es-ES": {
+            "subtitle": "Leyes y artículos de España",
+            "description": "Datos y consultas de España. Encuentra el artículo que necesitas en una ley o norma española. Busca por título o texto dentro de una norma consolidada del BOE con su identificador oficial. Obtén artículos o bloques, extractos y enlaces, con una fecha opcional para la versión disponible. Los resultados ayudan a revisar la redacción y preparar comparaciones. El conector localiza artículos; la interpretación de cambios y su aplicación requiere leer los textos pertinentes. No determina cumplimiento legal ni activa alertas."
+          },
+          "et-EE": {
+            "subtitle": "Hispaania seadused & BOE",
+            "description": "Leia vajalik artikkel Hispaania (España) seadusest või määrusest. Otsi pealkirjade või täisteksti järgi kinnitatud identifikaatoriga BOE konsolideeritud seaduse seest. Saa vastavad artikli või ploki identifikaatorid, saadaolevad versiooniandmed, väljavõtted ja algsed lingid. Kasulik sõnastuse kontrollimiseks ja loetavate sätete leidmiseks. Muudatuste võrdlemine või kohaldatavuse hindamine nõuab asjakohaseid tekste ja täiendavat ülevaatust. Konnektor otsib ühe nimetatud seaduse seest; see ei leia teema järgi kõiki seadusi, ei hinda õiguslikku vastavust ega seadista teavitusi."
+          },
+          "fi-FI": {
+            "subtitle": "Espanjan lait ja BOE-artiklat",
+            "description": "Löydä tarvitsemasi pykälä Espanjan (España) laista tai asetuksesta. Hae otsikoista tai koko tekstistä konsolidoidusta BOE-laista sen vahvistetulla tunnisteella. Saat vastaavat pykälä- tai lohkotunnisteet, saatavilla olevat versiotiedot, otteet ja alkuperäiset linkit. Hyödyllinen sanamuodon tarkistamiseen ja luettavien säännösten paikantamiseen. Muutosten vertailu tai sovellettavuuden arviointi edellyttää asiaankuuluvia tekstejä ja lisätarkastelua. Yhdistin hakee yhden nimetyn lain sisältä; se ei etsi kaikkia lakeja aiheen perusteella, määritä lainmukaisuutta eikä aseta hälytyksiä."
+          },
+          "fr-CA": {
+            "subtitle": "Lois d'Espagne et articles BOE",
+            "description": "Trouvez l'article qu'il vous faut dans une loi ou un règlement d'Espagne (España). Recherchez dans les titres ou le texte intégral d'une loi consolidée du BOE à l'aide de son identifiant vérifié. Obtenez les identifiants d'articles ou de blocs correspondants, les détails disponibles sur la version, des extraits et les liens d'origine. Utile pour vérifier le libellé et repérer les dispositions à lire. La comparaison des modifications ou l'analyse d'applicabilité exige les textes pertinents et un examen supplémentaire. Le connecteur cherche dans une loi précise; il ne repère pas toutes les lois d'un thème, ne détermine pas la conformité légale et ne configure pas d'alertes."
+          },
+          "fr-FR": {
+            "subtitle": "Lois d'Espagne et articles BOE",
+            "description": "Trouvez l'article dont vous avez besoin dans une loi ou réglementation d'Espagne (España). Recherchez dans les intitulés ou le texte intégral d'une loi consolidée du BOE grâce à son identifiant vérifié. Obtenez les identifiants d'articles ou de blocs correspondants, les informations de version disponibles, des extraits et les liens officiels d'origine. Utile pour vérifier une formulation et localiser les dispositions à consulter. La comparaison des modifications ou l'évaluation de l'applicabilité requiert les textes pertinents et un examen complémentaire. Le connecteur interroge une loi nommée ; il ne recense pas toutes les lois sur un thème, n'établit pas la conformité légale et ne crée pas d'alertes."
+          },
+          "gu-IN": {
+            "subtitle": "સ્પેન કાયદા અને BOE કલમો",
+            "description": "સ્પેન (España) ના કાયદા કે નિયમનમાં તમને જરૂરી કલમ શોધો. ચકાસાયેલ ઓળખકર્તાનો ઉપયોગ કરીને એકત્રિત BOE કાયદામાં શીર્ષકો અથવા સંપૂર્ણ લખાણ શોધો. મેળ ખાતી કલમ અથવા બ્લોક ઓળખકર્તા, ઉપલબ્ધ આવૃત્તિની વિગતો, અંશો અને મૂળ લિંક્સ મેળવો. શબ્દરચના ચકાસવા અને વાંચવા માટેની જોગવાઈઓ શોધવા માટે ઉપયોગી. ફેરફારોની તુલना અથવા લાગુ પડવાની સ્થિતિ જાણવા માટે સંબંધિત લખાણો અને વધારાની સમીક્ષા જરૂરી છે. આ કનેક્ટર એક નિર્દિષ્ટ કાયદાની અંદર જ શોધે છે; તે વિષય પરથી બધા કાયદા શોધતું નથી, કાનૂની પાલન નક્કી કરતું નથી કે એલર્ટ સેટ કરતું નથી."
+          },
+          "hi-IN": {
+            "subtitle": "स्पेन के कानून और BOE अनुच्छेद",
+            "description": "स्पेन (España) के किसी कानून या विनियमन में अपनी आवश्यकता वाला अनुच्छेद खोजें। सत्यापित पहचानकर्ता का उपयोग करके समेकित BOE कानून के भीतर शीर्षकों या पूर्ण पाठ में खोजें। मेल खाने वाले अनुच्छेद या ब्लॉक पहचानकर्ता, उपलब्ध संस्करण विवरण, अंश और मूल लिंक प्राप्त करें। शब्दों की जांच करने और पढ़ने योग्य प्रावधानों को खोजने के लिए उपयोगी। परिवर्तनों की तुलना करने या प्रयोज्यता तय करने के लिए संबंधित पाठ और अतिरिक्त समीक्षा आवश्यक है। यह कनेक्टर एक नामित कानून के भीतर ही खोजता है; यह किसी विषय के सभी कानून नहीं खोजता, कानूनी अनुपालन तय नहीं करता और न ही अलर्ट सेट करता है।"
+          },
+          "hr-HR": {
+            "subtitle": "Španjolski zakoni i članci BOE",
+            "description": "Pronađite članak koji trebate u zakonu ili propisu iz Španjolske (España). Pretražujte naslove ili cjeloviti tekst unutar pročišćenog teksta zakona BOE pomoću njegova provjerenog identifikatora. Dobijte odgovarajuće identifikatore članaka ili blokova, dostupne podatke o verziji, izvatke i izvorne poveznice. Korisno za provjeru teksta i pronalaženje odredbi za čitanje. Usporedba izmjena ili procjena primjenjivosti zahtijeva relevantne tekstove i dodatni pregled. Konektor pretražuje unutar jednog imenovanog zakona; ne pronalazi sve zakone za neku temu, ne utvrđuje pravnu usklađenost niti postavlja obavijesti."
+          },
+          "hu-HU": {
+            "subtitle": "Spanyol jogszabályok és BOE",
+            "description": "Keresse meg a szükséges szakaszt egy spanyolországi (España) törvényben vagy rendeletben. Keressen címsorokra vagy teljes szövegre egy egységes szerkezetű BOE-jogszabályon belül annak ellenőrzött azonosítójával. Kapja meg az egyező szakasz- vagy blokkazonosítókat, az elérhető verzióadatokat, kivonatokat és az eredeti linkeket. Hasznos a szövegezés ellenőrzéséhez és az elolvasandó rendelkezések megtalálásához. A módosítások összehasonlítása vagy az alkalmazhatóság megítélése a vonatkozó szövegek ismeretét és további vizsgálatot igényel. A csatlakozó egy megnevezett jogszabályon belül keres; nem találja meg egy téma összes törvényét, nem állapít meg jogszabályi megfelelést és nem állít be értesítéseket."
+          },
+          "hy-AM": {
+            "subtitle": "Իսպանիայի օրենքներ և BOE",
+            "description": "Գտեք ձեզ անհրաժեշտ հոդվածը Իսպանիայի (España) օրենքում կամ կարգավորման մեջ։ Որոնեք վերնագրերով կամ ամբողջական տեքստով համախմբված BOE օրենքի ներսում՝ օգտագործելով դրա հաստատված նույնականացուցիչը։ Ստացեք համապատասխան հոդվածի կամ բլոկի նույնականացուցիչները, տարբերակի հասանելի մանրամասները, քաղվածքները և սկզբնական հղումները։ Օգտակար է ձևակերպումները ստուգելու և ընթերցման համար դրույթները գտնելու համար։ Փոփոխությունների համեմատությունը կամ կիրառելիությունը պահանջում է համապատասխան տեքստեր և լրացուցիչ ուսումնասիրություն։ Կոնեկտորը որոնում է մեկ նշված օրենքի շրջանակում․ այն չի գտնում թեմային վերաբերող բոլոր օրենքները, չի որոշում իրավական համապատասխանությունը և ծանուցումներ չի կարգավորում։"
+          },
+          "id-ID": {
+            "subtitle": "Hukum Spanyol & pasal BOE",
+            "description": "Temukan pasal yang Anda butuhkan dalam undang-undang atau peraturan dari Spanyol (España). Cari judul atau teks lengkap di dalam undang-undang BOE terkonsolidasi menggunakan pengenal terverifikasinya. Dapatkan pengenal pasal atau blok yang cocok, detail versi yang tersedia, kutipan, dan tautan asli. Bermanfaat untuk memeriksa redaksi dan menemukan ketentuan yang perlu dibaca. Membandingkan perubahan atau keberlakuan memerlukan teks terkait dan peninjauan lebih lanjut. Konektor ini mencari di dalam satu undang-undang yang disebutkan; tidak menemukan seluruh undang-undang dari suatu topik, tidak menentukan kepatuhan hukum, dan tidak mengatur peringatan."
+          },
+          "is-IS": {
+            "subtitle": "Spænsk lög og BOE-greinar",
+            "description": "Finndu greinina sem þú þarft í lögum eða reglugerð frá Spáni (España). Leitaðu í fyrirsögnum eða fullum texta í samfelldum BOE-lögum með staðfestu auðkenni þeirra. Fáðu samsvarandi greinar- eða blokkaauðkenni, tiltækar upplýsingar um útgáfu, útdrætti og upprunalega tengla. Gagnlegt til að kanna orðalag og finna ákvæði til lestrar. Samanburður á breytingum eða beitingu krefst viðeigandi texta og frekari skoðunar. Tengið leitar innan eins tiltekins lagabálks; það finnur ekki öll lög eftir efni, metur ekki lagalegt samræmi og setur ekki upp tilkynningar."
+          },
+          "it-IT": {
+            "subtitle": "Leggi spagnole e articoli BOE",
+            "description": "Trova l'articolo che ti serve in una legge o norma della Spagna (España). Cerca tra i titoli o nel testo integrale di una norma consolidata del BOE utilizzando il relativo identificativo verificato. Ottieni gli identificativi degli articoli o dei blocchi corrispondenti, i dettagli disponibili sulla versione, gli estratti e i link originali. Utile per verificare la formulazione e individuare le disposizioni da leggere. Il confronto delle modifiche o la valutazione dell'applicabilità richiede i testi pertinenti e un ulteriore esame. Il connettore cerca all'interno di una legge specifica; non individua tutte le leggi per argomento, non certifica la conformità legale né imposta avvisi."
+          },
+          "ja-JP": {
+            "subtitle": "スペイン法令・BOE条文検索",
+            "description": "スペイン（España）の法律や規則から必要な条文を検索します。検証済みの識別子を使って統合版 BOE 法令内の見出しや全文を検索できます。該当する条文・ブロック識別子、利用可能な版の明細、抜粋、公式リンクを取得でき、条文の文言確認や読むべき規定の特定に役立ちます。改正の比較や適用可能性の判断には関連条文の確認と追加の検討が必要です。このコネクタは指定された1つの法令内を検索するものであり、テーマから全法令を探すことや法令順守の判断、アラート設定は行いません。"
+          },
+          "ka-GE": {
+            "subtitle": "ესპანეთის კანონები და BOE",
+            "description": "იპოვეთ საჭირო მუხლი ესპანეთის (España) კანონში ან რეგულაციაში. მოძებნეთ სათაურებში ან სრულ ტექსტში კონსოლიდირებულ BOE კანონში მისი დადასტურებული იდენტიფიკატორის გამოყენებით. მიიღეთ შესაბამისი მუხლის ან ბლოკის იდენტიფიკატორები, ვერსიის ხელმისაწვდომი დეტალები, ამონარიდები და საწყისი ბმულები. სასარგებლოა ფორმულირების შესამოწმებლად და წასაკითხი დებულებების მოსაძებნად. ცვლილებების შედარება ან გამოყენებადობის დადგენა მოითხოვს შესაბამის ტექსტებსა და დამატებით განხილვას. კონექტორი ეძებს ერთ დასახელებულ კანონში; ის არ პოულობს ყველა კანონს თემის მიხედვით, არ ადგენს სამართლებრივ შესაბამისობას და არ აყენებს შეტყობინებებს."
+          },
+          "kk": {
+            "subtitle": "Испания заңдары мен BOE",
+            "description": "Испанияның (España) заңынан немесе нормативтік актісінен қажетті бапты табыңыз. Расталған сәйкестендіргішін пайдаланып, шоғырландырылған BOE заңының ішінен тақырыпшалар немесе толық мәтін бойынша іздеңіз. Сәйкес келетін бап немесе блок сәйкестендіргіштерін, қолжетімді нұсқа деректерін, үзінділерді және түпнұсқа сілтемелерді алыңыз. Тұжырымдаманы тексеруге және оқылатын нормаларды табуға пайдалы. Өзгерістерді салыстыру немесе қолданылуын анықтау тиісті мәтіндер мен қосымша талдауды талап етеді. Қосқыш тек аталған бір заңның ішінде іздейді; тақырып бойынша барлық заңдарды таппайды, құқықтық сәйкестікті анықтамайды және хабарландыру орнатпайды."
+          },
+          "kn-IN": {
+            "subtitle": "ಸ್ಪೇನ್ ಕಾನೂನುಗಳು & BOE ಲೇಖನ",
+            "description": "ಸ್ಪೇನ್ (España) ನ ಕಾನೂನು ಅಥವಾ ನಿಯಮಾವಳಿಯಲ್ಲಿ ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಕಲಂ ಅನ್ನು ಹುಡುಕಿ. ಪರಿಶೀಲಿಸಿದ ಗುರುತಿಸುವಿಕೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಏಕೀಕೃತ BOE ಕಾನೂನಿನೊಳಗೆ ಶೀರ್ಷಿಕೆಗಳು ಅಥವಾ ಪೂರ್ಣ ಪಠ್ಯವನ್ನು ಹುಡುಕಿ. ಹೊಂದಾಣಿಕೆಯಾಗುವ ಕಲಂ ಅಥವಾ ಬ್ಲಾಕ್ ಗುರುತಿಸುವಿಕೆಗಳು, ಲಭ್ಯವಿರುವ ಆವೃತ್ತಿಯ ವಿವರಗಳು, ಉದ್ಧರಣಗಳು ಮತ್ತು ಮೂಲ ಲಿಂಕ್‌ಗಳನ್ನು ಪಡೆಯಿರಿ. ಪದಬಳಕೆಯನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ಓದಬೇಕಾದ ನಿಬಂಧನೆಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲು ಉಪಯುಕ್ತವಾಗಿದೆ. ಬದಲಾವಣೆಗಳನ್ನು ಹೋಲಿಸಲು ಅಥವಾ ಅನ್ವಯಿಸುವಿಕೆಯನ್ನು ನಿರ್ಧರಿಸಲು ಸಂಬಂಧಿತ ಪಠ್ಯಗಳು ಮತ್ತು ಹೆಚ್ಚುವರಿ ಪರಿಶೀಲನೆ ಅಗತ್ಯವಿದೆ. ಈ ಕನೆಕ್ಟರ್ ಹೆಸರಿಸಿದ ಒಂದು ಕಾನೂನಿನೊಳಗೆ ಮಾತ್ರ ಹುಡುಕುತ್ತದೆ; ಇದು ವಿಷಯದಿಂದ ಎಲ್ಲಾ ಕಾನೂನುಗಳನ್ನು ಹುಡುಕುವುದಿಲ್ಲ, ಕಾನೂನು ಅನುಸರಣೆಯನ್ನು ನಿರ್ಧರಿಸುವುದಿಲ್ಲ ಅಥವಾ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಹೊಂದಿಸುವುದಿಲ್ಲ."
+          },
+          "ko-KR": {
+            "subtitle": "스페인 법률 및 BOE 조항 검색",
+            "description": "스페인(España)의 법률이나 규정에서 필요한 조항을 찾으세요. 검증된 식별자를 사용해 통합 BOE 법률 내부의 제목이나 전체 텍스트를 검색할 수 있습니다. 일치하는 조항 또는 블록 식별자, 제공되는 버전 정보, 발췌문 및 공식 원문 링크를 받아보세요. 문구 확인과 읽어야 할 조항 위치 파악에 유용합니다. 개정 내용 비교나 적용 가능성 판단을 위해서는 관련 원문과 추가 검토가 필요합니다. 이 커넥터는 지정된 단일 법률 내부를 검색하며, 주제별 전체 법률을 찾거나 법적 준수 여부를 판단하거나 알림을 설정하지 않습니다."
+          },
+          "lt-LT": {
+            "subtitle": "Ispanijos įstatymai ir BOE",
+            "description": "Raskite reikiamą straipsnį Ispanijos (España) įstatyme ar reglamente. Ieškokite antraštėse arba visame tekste konsoliduotame BOE įstatyme naudodami patvirtintą jo identifikatorių. Gaukite atitinkančius straipsnio ar bloko identifikatorius, prieinamą versijos informaciją, ištraukas ir pradines nuorodas. Naudinga tikrinant formuluotę ir ieškant nuostatų, kurias reikia perskaityti. Pakeitimams palyginti ar taikytinumui įvertinti reikalingi atitinkami tekstai ir papildoma peržiūra. Jungtis ieško viename nurodytame įstatyme; ji neranda visų įstatymų pagal temą, nenustato teisinės atitikties ir nenustato įspėjimų."
+          },
+          "lv-LV": {
+            "subtitle": "Spānijas likumi un BOE panti",
+            "description": "Atrodiet nepieciešamo pantu Spānijas (España) likumā vai noteikumos. Meklējiet virsrakstos vai pilnajā tekstā konsolidētajā BOE likumā, izmantojot tā verificēto identifikatoru. Saņemiet atbilstošos panta vai bloka identifikatorus, pieejamo versijas informāciju, izvilkumus un sākotnējās saites. Noderīgi formulējuma pārbaudei un lasāmo normu atrašanai. Izmaiņu salīdzināšanai vai piemērojamības noteikšanai nepieciešami attiecīgie teksti un papildu izvērtēšana. Savienotājs meklē vienā nosauktā likumā; tas neatrod visus likumus pēc tēmas, nenosaka juridisko atbilstību un neiestata brīdinājumus."
+          },
+          "mk-MK": {
+            "subtitle": "Шпански закони и BOE членови",
+            "description": "Најдете го членот што ви треба во закон или пропис од Шпанија (España). Пребарувајте по наслови или целосен текст во консолидиран закон на BOE користејќи го неговиот потврден идентификатор. Добијте соодветни идентификатори на членови или блокови, достапни детали за верзијата, извадоци и изворни врски. Корисно за проверка на формулацијата и наоѓање одредби за читање. Споредбата на измени или применливоста бара соодветни текстови и дополнителен преглед. Конекторот пребарува во рамките на еден именуван закон; не ги наоѓа сите закони според тема, не утврдува правна усогласеност и не поставува известувања."
+          },
+          "ml-IN": {
+            "subtitle": "സ്പെയിൻ നിയമം & BOE വകുപ്പ്",
+            "description": "സ്പെയിനിലെ (España) ഒരു നിയമത്തിലോ ചട്ടത്തിലോ നിങ്ങൾക്ക് ആവശ്യമുള്ള വകുപ്പ് കണ്ടെത്തുക. പരിശോധിച്ച ഐഡന്റിഫയർ ഉപയോഗിച്ച് ഏകീകൃത BOE നിയമത്തിനുള്ളിലെ തലക്കെട്ടുകളോ പൂർണ്ണ പാഠമോ തിരയുക. പൊരുത്തപ്പെടുന്ന വകുപ്പ് അല്ലെങ്കിൽ ബ്ലോക്ക് ഐഡന്റിഫയറുകൾ, ലഭ്യമായ പതിപ്പ് വിശദാംശങ്ങൾ, ഉദ്ധരണികൾ, യഥാർത്ഥ ലിങ്കുകൾ എന്നിവ നേടുക. പദപ്രയോഗം പരിശോധിക്കുന്നതിനും വായിക്കേണ്ട വ്യവസ്ഥകൾ കണ്ടെത്തുന്നതിനും ഇത് പ്രയോജനകരമാണ്. മാറ്റങ്ങൾ താരതമ്യം ചെയ്യുന്നതിനോ ബാധകത നിർണ്ണയിക്കുന്നതിനോ പ്രസക്തമായ പാഠങ്ങളും കൂടുതൽ അവലോകനവും ആവശ്യമാണ്. ഈ കണക്ടർ പേര് നൽകിയ ഒരു നിയമത്തിനുള്ളിൽ തിരയുന്നു; ഒരു വിഷയത്തിൽ നിന്നുള്ള എല്ലാ നിയമങ്ങളും കണ്ടെത്തുകയോ നിയമപരമായ അനുസരണം നിർണ്ണയിക്കുകയോ അലർട്ടുകൾ സജ്ജീകരിക്കുകയോ ചെയ്യുന്നില്ല."
+          },
+          "mn-MN": {
+            "subtitle": "Испанийн хууль ба BOE зүйл",
+            "description": "Испани (España) улсын хууль эсвэл журмаас өөрт хэрэгтэй зүйл заалтаа олоорой. Баталгаажсан танигчийг ашиглан нэгтгэсэн BOE хуулийн доторх гарчиг эсвэл бүрэн эхээр хайлт хийнэ үү. Тохирох зүйл, хэсгийн танигч, боломжит хувилбарын дэлгэрэнгүй мэдээлэл, ишлэл болон эх холбоосыг авна уу. Найруулгыг шалгах, унших шаардлагатай заалтуудыг олоход тустай. Өөрчлөлтийг харьцуулах эсвэл хэрэглэгдэх эсэхийг тогтооход холбогдох эх бичвэр болон нэмэлт хяналт шаардлагатай. Холбогч нь нэрлэсэн нэг хуулийн хүрээнд хайлт хийдэг; сэдвээр бүх хуулийг олохгүй, хууль эрх зүйн нийцлийг тогтоохгүй, мөн сэрэмжлүүлэг тохируулахгүй."
+          },
+          "mr-IN": {
+            "subtitle": "स्पेन कायदे आणि BOE कलमे",
+            "description": "स्पेन (España) मधील कायदा किंवा नियमावलीत तुम्हाला हवे असलेले कलम शोधा. पडताळलेला ओळखकर्ता वापरून एकत्रित BOE कायद्यातील शीर्षके किंवा संपूर्ण मजकूर शोधा. जुळणारे कलम किंवा ब्लॉक ओळखकर्ते, उपलब्ध आवृत्तीचा तपशील, उतारे आणि मूळ दुवे मिळवा. शब्दरचना तपासण्यासाठी आणि वाचायच्या तरतुदी शोधण्यासाठी उपयुक्त. बदलांची तुलना करण्यासाठी किंवा लागू होण्याची खात्री करण्यासाठी संबंधित मजकूर आणि अतिरिक्त तपासणी आवश्यक असते. हा कनेक्टर एका नमूद केलेल्या कायद्यात शोधतो; तो विषयावरून सर्व कायदे शोधत नाही, कायदेशीर पालन ठरवत नाही किंवा सूचना सेट करत नाही."
+          },
+          "ms-MY": {
+            "subtitle": "Undang-undang Sepanyol & BOE",
+            "description": "Cari artikel yang anda perlukan dalam undang-undang atau peraturan dari Sepanyol (España). Cari tajuk atau teks penuh dalam undang-undang BOE yang disatukan menggunakan pengecam yang disahkan. Dapatkan pengecam artikel atau blok yang sepadan, butiran versi yang tersedia, petikan dan pautan asal. Berguna untuk menyemak ungkapan dan mencari peruntukan untuk dibaca. Membandingkan perubahan atau kebolehgunaan memerlukan teks yang berkaitan dan semakan tambahan. Penyambung ini mencari dalam satu undang-undang yang dinamakan; ia tidak mencari semua undang-undang daripada sesuatu topik, menentukan pematuhan undang-undang atau menetapkan makluman."
+          },
+          "my-MM": {
+            "subtitle": "စပိန်ဥပဒေနှင့် BOE ပုဒ်မများ",
+            "description": "စပိန်နိုင်ငံ (España) ၏ ဥပဒေ သို့မဟုတ် စည်းမျဉ်းတစ်ခုအတွင်း သင်လိုအပ်သော ပုဒ်မကို ရှာဖွေပါ။ အတည်ပြုထားသော ခွဲခြားသတ်မှတ်ကုဒ်ကို အသုံးပြု၍ ပေါင်းစည်းထားသော BOE ဥပဒေအတွင်း ခေါင်းစဉ်များ သို့မဟုတ် စာသားအပြည့်အစုံကို ရှာဖွေပါ။ ကိုက်ညီသော ပုဒ်မ သို့မဟုတ် အပိုင်း ခွဲခြားကုဒ်များ၊ ရရှိနိုင်သော ဗားရှင်းအသေးစိတ်များ၊ ကောက်နုတ်ချက်များနှင့် မူရင်းလင့်ခ်များကို ရယူပါ။ စကားလုံးအသုံးအနှုန်း စစ်ဆေးရန်နှင့် ဖတ်ရှုရမည့် ပြဋ္ဌာန်းချက်များကို ရှာဖွေရန် အသုံးဝင်သည်။ ပြောင်းလဲမှုများကို နှိုင်းယှဉ်ခြင်း သို့မဟုတ် သက်ဆိုင်မှု ရှိမရှိ ဆုံးဖြတ်ခြင်းအတွက် သက်ဆိုင်ရာ စာသားများနှင့် ထပ်ဆောင်းစိစစ်မှု လိုအပ်သည်။ ဤချိတ်ဆက်ကိရိယာသည် အမည်တပ်ထားသော ဥပဒေတစ်ခုအတွင်း၌သာ ရှာဖွေပေးပြီး ခေါင်းစဉ်တစ်ခုမှ ဥပဒေအားလုံးကို ရှာဖွေခြင်း၊ ဥပဒေလိုက်နာမှု ဆုံးဖြတ်ခြင်း သို့မဟုတ် သတိပေးချက်များ သတ်မှတ်ခြင်း မပြုလုပ်ပါ။"
+          },
+          "nb-NO": {
+            "subtitle": "Spanske lover og BOE-artikler",
+            "description": "Finn artikkelen du trenger i en lov eller forskrift fra Spania (España). Søk i overskrifter eller fulltekst i en konsolidert BOE-lov ved hjelp av dens verifiserte identifikator. Få samsvarende artikkel- eller blokk-ID-er, tilgjengelige versjonsdetaljer, utdrag og originallenker. Nyttig for å kontrollere ordlyden og finne bestemmelsene som skal leses. Sammenligning av endringer eller anvendelighet krever de relevante tekstene og ytterligere gjennomgang. Koblingen søker innenfor én navngitt lov; den finner ikke alle lover ut fra et tema, avgjør ikke rettslig etterlevelse eller setter opp varsler."
+          },
+          "nl-NL": {
+            "subtitle": "Spaanse wetten & BOE-artikelen",
+            "description": "Vind het artikel dat u nodig hebt in een wet of regeling uit Spanje (España). Zoek op koppen of volledige tekst binnen een geconsolideerde BOE-wet met behulp van de geverifieerde identificatiecode. Ontvang overeenkomende artikel- of blok-id's, beschikbare versiegegevens, fragmenten en originele links. Handig om de formulering te controleren en de te lezen bepalingen te vinden. Het vergelijken van wijzigingen of het beoordelen van toepasselijkheid vereist de relevante teksten en aanvullend onderzoek. De connector zoekt binnen één genoemde wet; hij vindt niet alle wetten op basis van een onderwerp, stelt geen juridische naleving vast en stelt geen meldingen in."
+          },
+          "pa": {
+            "subtitle": "ਸਪੇਨ ਦੇ ਕਾਨੂੰਨ ਅਤੇ BOE ਧਾਰਾ",
+            "description": "ਸਪੇਨ (España) ਦੇ ਕਿਸੇ ਕਾਨੂੰਨ ਜਾਂ ਨਿਯਮ ਵਿੱਚ ਆਪਣੀ ਲੋੜੀਂਦੀ ਧਾਰਾ ਲੱਭੋ। ਪ੍ਰਮਾਣਿਤ ਪਛਾਣਕਰਤਾ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇਕੱਤਰ ਕੀਤੇ BOE ਕਾਨੂੰਨ ਦੇ ਅੰਦਰ ਸਿਰਲੇਖਾਂ ਜਾਂ ਪੂਰੇ ਪਾਠ ਵਿੱਚ ਖੋਜ ਕਰੋ। ਮੇਲ ਖਾਂਦੇ ਧਾਰਾ ਜਾਂ ਬਲਾਕ ਪਛਾਣਕਰਤਾ, ਉਪਲਬਧ ਸੰਸਕਰਣ ਵੇਰਵੇ, ਅੰਸ਼ ਅਤੇ ਅਸਲ ਲਿੰਕ ਪ੍ਰਾਪਤ ਕਰੋ। ਸ਼ਬਦਾਵਲੀ ਦੀ ਜਾਂਚ ਕਰਨ ਅਤੇ ਪੜ੍ਹਨ ਲਈ ਉਪਬੰਧ ਲੱਭਣ ਲਈ ਉਪਯੋਗੀ। ਤਬਦੀਲੀਆਂ ਦੀ ਤੁਲਨਾ ਕਰਨ ਜਾਂ ਲਾਗੂ ਹੋਣ ਦੀ ਸਥਿਤੀ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ ਸੰਬੰਧਿਤ ਪਾਠ ਅਤੇ ਵਾਧੂ ਸਮੀਖਿਆ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। ਇਹ ਕਨੈਕਟਰ ਕਿਸੇ ਨਾਮਜ਼ਦ ਕਾਨੂੰਨ ਦੇ ਅੰਦਰ ਖੋਜ ਕਰਦਾ ਹੈ; ਇਹ ਕਿਸੇ ਵਿਸ਼ੇ ਤੋਂ ਸਾਰੇ ਕਾਨੂੰਨ ਨਹੀਂ ਲੱਭਦਾ, ਕਾਨੂੰਨੀ ਪਾਲਣਾ ਨਿਰਧਾਰਤ ਨਹੀਂ ਕਰਦਾ ਜਾਂ ਅਲਰਟ ਸੈੱਟ ਨਹੀਂ ਕਰਦਾ।"
+          },
+          "pl-PL": {
+            "subtitle": "Hiszpańskie ustawy i BOE",
+            "description": "Znajdź potrzebny artykuł w hiszpańskiej (España) ustawie lub rozporządzeniu. Przeszukuj nagłówki lub pełny tekst w skonsolidowanym akcie prawnym BOE za pomocą jego zweryfikowanego identyfikatora. Uzyskaj pasujące identyfikatory artykułów lub bloków, dostępne dane o wersji, fragmenty oraz oryginalne linki. Przydatne do sprawdzania brzmienia i odnajdywania przepisów do przeczytania. Porównanie zmian lub ocena zastosowania wymaga zapoznania się z odpowiednimi tekstami oraz dodatkowej analizy. Łącznik przeszukuje jedną wskazaną ustawę; nie wyszukuje wszystkich ustaw według tematu, nie rozstrzyga o zgodności z prawem ani nie ustawia powiadomień."
+          },
+          "pt-BR": {
+            "subtitle": "Leis da Espanha e artigos BOE",
+            "description": "Encontre o artigo de que precisa em uma lei ou norma da Espanha (España). Pesquise por títulos ou texto completo dentro de uma lei consolidada do BOE usando seu identificador verificado. Obtenha identificadores de artigos ou blocos correspondentes, detalhes disponíveis da versão, trechos e links originais. Útil para conferir a redação e localizar as disposições para leitura. Comparar alterações ou avaliar a aplicabilidade requer os textos pertinentes e revisão adicional. O conector pesquisa dentro de uma lei específica; não encontra todas as leis a partir de um tema, não determina conformidade legal nem configura alertas."
+          },
+          "pt-PT": {
+            "subtitle": "Leis de Espanha e artigos BOE",
+            "description": "Encontre o artigo de que precisa numa lei ou norma de Espanha (España). Pesquise por títulos ou texto integral dentro de uma lei consolidada do BOE utilizando o respetivo identificador verificado. Obtenha identificadores de artigos ou blocos correspondentes, detalhes disponíveis da versão, excertos e ligações originais. Útil para verificar a redação e localizar as disposições a ler. Comparar alterações ou avaliar a aplicabilidade exige os textos pertinentes e análise adicional. O conector pesquisa dentro de uma lei identificada; não encontra todas as leis a partir de um tema, não determina conformidade legal nem cria alertas."
+          },
+          "ro-RO": {
+            "subtitle": "Legi spaniole și articole BOE",
+            "description": "Găsește articolul de care ai nevoie într-o lege sau reglementare din Spania (España). Caută în titluri sau în textul integral al unei legi consolidate din BOE folosind identificatorul său verificat. Obține identificatorii articolelor sau blocurilor potrivite, detaliile disponibile ale versiunii, extrase și linkurile originale. Util pentru verificarea formulării și localizarea dispozițiilor de citit. Compararea modificărilor sau evaluarea aplicabilității necesită textele relevante și o analiză suplimentară. Conectorul caută în interiorul unei singure legi numite; nu găsește toate legile pornind de la o temă, nu stabilește conformitatea legală și nu configurează alerte."
+          },
+          "ru-RU": {
+            "subtitle": "Законы Испании и статьи BOE",
+            "description": "Найдите нужную статью в законе или нормативном акте Испании (España). Ищите по заголовкам или полному тексту внутри консолидированного закона BOE, используя его проверенный идентификатор. Получайте совпадающие идентификаторы статей или блоков, доступные сведения о версии, выдержки и официальные ссылки. Полезно для проверки формулировок и поиска положений для изучения. Сравнение изменений или оценка применимости требуют изучения соответствующих текстов и дополнительной проверки. Коннектор выполняет поиск внутри указанного закона; он не находит все законы по теме, не определяет правовое соответствие и не настраивает уведомления."
+          },
+          "sk-SK": {
+            "subtitle": "Španielske zákony a články BOE",
+            "description": "Nájdite článok, ktorý potrebujete, v zákone alebo nariadení zo Španielska (España). Vyhľadávajte v nadpisoch alebo plnom texte v konsolidovanom zákone BOE pomocou jeho overeného identifikátora. Získajte zodpovedajúce identifikátory článkov alebo blokov, dostupné údaje o verzii, úryvky a pôvodné odkazy. Užitočné na overenie znenia a nájdenie ustanovení na prečítanie. Porovnanie zmien alebo posúdenie uplatniteľnosti si vyžaduje príslušné texty a ďalšie preskúmanie. Konektor vyhľadáva v rámci jedného uvedeného zákona; nevyhľadá všetky zákony podľa témy, neurčuje právny súlad ani nenastavuje upozornenia."
+          },
+          "sl-SI": {
+            "subtitle": "Španski zakoni in členi BOE",
+            "description": "Poiščite člen, ki ga potrebujete, v zakonu ali predpisu iz Španije (España). Iščite po naslovih ali celotnem besedilu znotraj prečiščenega zakona BOE z uporabo njegovega preverjenega identifikatorja. Pridobite ujemajoče se identifikatorje členov ali blokov, razpoložljive podatke o različici, izvlečke in izvirne povezave. Uporabno za preverjanje besedila in iskanje določb za branje. Primerjava sprememb ali presoja uporabnosti zahteva ustrezna besedila in dodaten pregled. Priključek išče znotraj enega imenovanega zakona; ne najde vseh zakonov po temi, ne ugotavlja pravne skladnosti in ne nastavlja opozoril."
+          },
+          "so-SO": {
+            "subtitle": "Shuruucda Isbaanishka & BOE",
+            "description": "Ka hel qodobka aad u baahan tahay sharci ama xeer ka soo baxay Isbaanishka (España). Ka raadi cinwaannada ama qoraalka buuxa ee gudaha sharciga BOE ee la mideeyay adigoo adeegsanaya aqoonsigiisa la xaqiijiyay. Hel aqoonsiyada qodobka ama qaybta ku habboon, faahfaahinta nooca la heli karo, qoraallo kooban iyo xiriiriyeyaasha asalka ah. Waxtar u leh hubinta erayada iyo helitaanka qodobbada la akhriyo. Isbarbardhigga isbeddellada ama ku-dhaqanka wuxuu u baahan yahay qoraallada khuseeya iyo dib-u-eegis dheeraad ah. Xiriiriyuhu wuxuu ka raadiyaa hal sharci oo la magacaabay gudaheeda; ma helo dhammaan sharciyada mawduuc ka yimaada, ma go'aamiyo u hoggaansanaanta sharciga mana dejiyo digniino."
+          },
+          "sq-AL": {
+            "subtitle": "Ligjet spanjolle & nenet BOE",
+            "description": "Gjeni nenin që ju nevojitet në një ligj ose rregullore nga Spanja (España). Kërkoni tituj ose tekst të plotë brenda një ligji të konsoliduar të BOE duke përdorur identifikuesin e tij të verifikuar. Merrni identifikuesit përkatës të neneve ose blloqeve, detajet e disponueshme të versionit, fragmente dhe lidhjet origjinale. E dobishme për të kontrolluar formulimin dhe për të gjetur dispozitat që duhen lexuar. Krahasimi i ndryshimeve ose zbatueshmëria kërkon tekstet përkatëse dhe shqyrtim shtesë. Lidhësi kërkon brenda një ligji të emërtuar; nuk gjen të gjitha ligjet sipas një teme, nuk përcakton pajtueshmërinë ligjore dhe nuk vendos sinjalizime."
+          },
+          "sr-RS": {
+            "subtitle": "Шпански закони и BOE чланови",
+            "description": "Пронађите члан који вам је потребан у закону или пропису из Шпаније (España). Претражујте наслове или цео текст унутар пречишћеног BOE закона користећи његов проверени идентификатор. Добијте одговарајуће идентификаторе чланова или блокова, доступне податке о верзији, изводе и изворне линкове. Корисно за проверу текста и проналажење одредаба за читање. Поређење измена или примењивости захтева релевантне текстове и додатну проверу. Конектор претражује унутар једног наведеног закона; не проналази све законе по теми, не утврђује правну усклађеност нити поставља обавештења."
+          },
+          "sv-SE": {
+            "subtitle": "Spanska lagar och BOE-artiklar",
+            "description": "Hitta artikeln du behöver i en lag eller förordning från Spanien (España). Sök bland rubriker eller i fulltext i en konsoliderad BOE-lag med dess verifierade identifierare. Få matchande artikel- eller block-ID:n, tillgänglig versionsinformation, utdrag och originallänkar. Användbart för att kontrollera lydelsen och hitta de bestämmelser som ska läsas. Att jämföra ändringar eller bedöma tillämplighet kräver relevanta texter och ytterligare granskning. Kopplingen söker inom en namngiven lag; den hittar inte alla lagar utifrån ett ämne, avgör inte regelefterlevnad och skapar inga aviseringar."
+          },
+          "sw-TZ": {
+            "subtitle": "Sheria za Uhispania na BOE",
+            "description": "Pata kifungu unachohitaji katika sheria au kanuni kutoka Uhispania (España). Tafuta vichwa vya habari au maandishi kamili ndani ya sheria iliyounganishwa ya BOE kwa kutumia kitambulisho chake kilichothibitishwa. Pata vitambulisho vya vifungu au sehemu zinazolingana, maelezo yanayopatikana ya toleo, dondoo na viungo vya asili. Ni muhimu kwa kukagua maneno halisi na kupata masharti ya kusoma. Kulinganisha mabadiliko au matumizi halisi kunahitaji maandishi husika na tathmini ya ziada. Kiunganishi hiki hutafuta ndani ya sheria moja iliyotajwa; hakitafuti sheria zote kutokana na mada, hakiamui utiifu wa kisheria wala hakiweki arifa."
+          },
+          "ta-IN": {
+            "subtitle": "ஸ்பெயின் சட்டம் & BOE பிரிவு",
+            "description": "ஸ்பெயினின் (España) சட்டம் அல்லது ஒழுங்குமுறையில் உங்களுக்குத் தேவையான பிரிவைக் கண்டறியவும். சரிபார்க்கப்பட்ட அடையாளங்காட்டியைப் பயன்படுத்தி ஒருங்கிணைந்த BOE சட்டத்திற்குள் தலைப்புகள் அல்லது முழு உரையைத் தேடுங்கள். பொருந்தும் பிரிவு அல்லது தொகுதி அடையாளங்காட்டிகள், கிடைக்கும் பதிப்பு விவரங்கள், பகுதிகள் மற்றும் அசல் இணைப்புகளைப் பெறுங்கள். சொற்களைச் சரிபார்க்கவும் படிக்க வேண்டிய விதிகளைக் கண்டறியவும் இது பயனுள்ளதாக இருக்கும். மாற்றங்களை ஒப்பிடுவதற்கோ பொருந்தக்கூடிய தன்மையைத் தீர்மானிப்பதற்கோ தொடர்புடைய உரைகளும் கூடுதல் மதிப்பாய்வும் தேவை. இந்த இணைப்பி குறிப்பிட்ட ஒரு சட்டத்திற்குள் மட்டுமே தேடும்; ஒரு தலைப்பிலிருந்து எல்லாச் சட்டங்களையும் தேடாது, சட்ட இணக்கத்தைத் தீர்மானிக்காது அல்லது விழிப்பூட்டல்களை அமைக்காது."
+          },
+          "te-IN": {
+            "subtitle": "స్పెయిన్ చట్టాలు & BOE అధికరణ",
+            "description": "స్పెయిన్ (España) చట్టం లేదా నిబంధనలో మీకు అవసరమైన అధికరణను కనుగొనండి. ధృవీకరించిన ఐడెంటిఫైయర్ ఉపయోగించి ఏకీకృత BOE చట్టంలోని శీర్షికలు లేదా పూర్తి పాఠాన్ని శోధించండి. సరిపోలే అధికరణ లేదా బ్లాక్ ఐడెంటిఫైయర్లు, అందుబాటులో ఉన్న వెర్షన్ వివరాలు, సారాంశాలు మరియు అసలు లింక్‌లను పొందండి. పదజాలాన్ని తనిఖీ చేయడానికి మరియు చదవాల్సిన నిబంధనలను గుర్తించడానికి ఉపయోగపడుతుంది. మార్పులను పోల్చడానికి లేదా వర్తింపును నిర్ణయించడానికి సంబంధిత పాఠాలు మరియు అదనపు సమీక్ష అవసరం. ఈ కనెక్టర్ పేర్కొన్న ఒక చట్టం లోపల మాత్రమే శోధిస్తుంది; ఒక అంశం ఆధారంగా అన్ని చట్టాలను కనుగొనదు, చట్టపరమైన అనుసరణను నిర్ధారించదు లేదా అలర్ట్‌లను సెట్ చేయదు."
+          },
+          "th-TH": {
+            "subtitle": "กฎหมายสเปนและมาตรา BOE",
+            "description": "ค้นหามาตราที่คุณต้องการในกฎหมายหรือข้อบังคับของสเปน (España) ค้นหาหัวข้อหรือข้อความฉบับเต็มภายในกฎหมาย BOE ฉบับรวมโดยใช้รหัสยืนยันตัวตนที่ตรวจสอบแล้ว รับรหัสมาตราหรือบล็อกที่ตรงกัน รายละเอียดเวอร์ชันที่มีอยู่ ข้อความตัดตอน และลิงก์ต้นฉบับ เหมาะสำหรับตรวจสอบถ้อยคำและระบุข้อกำหนดที่ต้องอ่าน การเปรียบเทียบการแก้ไขหรือการปรับใช้ต้องอาศัยตัวบทที่เกี่ยวข้องและการตรวจสอบเพิ่มเติม ตัวเชื่อมต่อนี้ค้นหาภายในกฎหมายที่ระบุชื่อเพียงฉบับเดียว ไม่ได้ค้นหากฎหมายทั้งหมดจากหัวข้อ ไม่ได้วินิจฉัยการปฏิบัติตามกฎหมาย และไม่ได้ตั้งค่าการแจ้งเตือน"
+          },
+          "tl": {
+            "subtitle": "Mga batas ng Spain at BOE",
+            "description": "Hanapin ang artikulong kailangan mo sa isang batas o regulasyon mula sa Spain (España). Maghanap ng mga pamagat o buong teksto sa loob ng pinagsama-samang batas ng BOE gamit ang beripikadong identifier nito. Kumuha ng mga tumutugmang identifier ng artikulo o bloke, mga available na detalye ng bersyon, sipi, at mga orihinal na link. Kapaki-pakinabang sa pagsusuri ng pagkakasulat at paghahanap ng mga probisyong babasahin. Ang paghahambing ng mga pagbabago o pagiging angkop ay nangangailangan ng mga kaukulang teksto at karagdagang pagsusuri. Naghahanap ang connector sa loob ng isang pinangalanang batas; hindi nito nahahanap ang lahat ng batas mula sa isang paksa, hindi nagpapasya ng pagsunod sa batas, o nagtatakda ng mga alerto."
+          },
+          "tr-TR": {
+            "subtitle": "İspanya yasaları & BOE maddesi",
+            "description": "İspanya'daki (España) bir kanun veya yönetmelikte ihtiyacınız olan maddeyi bulun. Doğrulanmış tanımlayıcısını kullanarak birleştirilmiş BOE kanunu içindeki başlıkları veya tam metni arayın. Eşleşen madde veya blok tanımlayıcılarını, mevcut sürüm bilgilerini, alıntıları ve resmi kaynak bağlantılarını edinin. İfadeleri kontrol etmek ve okunacak hükümleri belirlemek için kullanışlıdır. Değişiklikleri karşılaştırmak veya uygulanabilirliği değerlendirmek ilgili metinleri ve ek incelemeyi gerektirir. Bağlayıcı yalnızca adı verilen tek bir kanun içinde arama yapar; bir konuya göre tüm yasaları bulmaz, yasal uygunluk belirlemez ve uyarı kurmaz."
+          },
+          "uk-UA": {
+            "subtitle": "Закони Іспанії та статті BOE",
+            "description": "Знайдіть потрібну статтю в законі або нормативному акті Іспанії (España). Шукайте за заголовками або повним текстом у консолідованому законі BOE за його перевіреним ідентифікатором. Отримуйте відповідні ідентифікатори статей або блоків, доступні дані про версію, уривки та оригінальні посилання. Корисно для перевірки формулювань і пошуку положень для ознайомлення. Порівняння змін або визначення застосовності потребує відповідних текстів і додаткового аналізу. Конектор здійснює пошук у межах одного вказаного закону; він не шукає всі закони за темою, не визначає правову відповідність і не налаштовує сповіщення."
+          },
+          "ur": {
+            "subtitle": "اسپین کے قوانین اور BOE دفعات",
+            "description": "اسپین (España) کے کسی قانون یا ضابطے میں اپنی مطلوبہ دفعہ تلاش کریں۔ تصدیق شدہ شناخت کنندہ استعمال کرتے ہوئے یکجا BOE قانون کے اندر عنوانات یا مکمل متن تلاش کریں۔ مماثل دفعہ یا بلاک کے شناخت کنندگان، دستیاب ورژن کی تفصیلات، اقتباسات اور اصل لنکس حاصل کریں۔ الفاظ کی جانچ کرنے اور مطالعے کے لیے شقیں تلاش کرنے میں مفید ہے۔ تبدیلیوں کا موازنہ کرنے یا اطلاق کا تعین کرنے کے لیے متعلقہ متون اور اضافی جائزے کی ضرورت ہوتی ہے۔ یہ کنیکٹر صرف نامزد کردہ ایک قانون کے اندر تلاش کرتا ہے؛ یہ کسی موضوع سے تمام قوانین نہیں ڈھونڈتا، قانونی مطابقت کا فیصلہ نہیں کرتا اور نہ ہی الرٹس ترتیب دیتا ہے۔"
+          },
+          "vi-VN": {
+            "subtitle": "Luật Tây Ban Nha & điều BOE",
+            "description": "Tìm điều khoản bạn cần trong một đạo luật hoặc quy định của Tây Ban Nha (España). Tra cứu tiêu đề hoặc toàn văn bên trong một văn bản luật hợp nhất trên BOE bằng mã định danh đã xác minh. Nhận mã định danh điều khoản hoặc khối phù hợp, thông tin phiên bản hiện có, trích đoạn và liên kết gốc. Hữu ích để kiểm tra câu chữ và xác định các quy định cần đọc. Việc so sánh thay đổi hoặc đánh giá khả năng áp dụng đòi hỏi các văn bản liên quan và sự xem xét bổ sung. Trình kết nối chỉ tìm kiếm trong một đạo luật được chỉ định; không tìm mọi đạo luật theo chủ đề, không xác định sự tuân thủ pháp lý và không thiết lập cảnh báo."
+          },
+          "zh-CN": {
+            "subtitle": "西班牙法律与 BOE 条文检索",
+            "description": "在西班牙（España）的法律或法规中查找所需条文。使用经核验的标识符，在 BOE 汇编法律中按标题或全文进行检索。获取匹配的条文或区块标识符、可用版本详情、摘录及原始链接，有助于核对措辞并定位需要阅读的条款。如需比较修订内容或判断适用性，仍需结合相关文本作进一步审查。该连接器仅在指定的单一法律内检索，不会按主题查找全部法律、判定法律合规性或设置提醒。"
+          },
+          "zh-HK": {
+            "subtitle": "西班牙法例與 BOE 條文",
+            "description": "在西班牙（España）的法律或法規中尋找所需條文。使用經核實的識別碼，在 BOE 綜合法律內按標題或全文搜尋。取得相符的條文或區塊識別碼、可用版本詳情、摘錄及原始連結，有助核對條文措辭並找出需閱讀的規定。比較修訂或判斷適用性須參閱相關文本並作進一步審閱。此連接器僅在指定的單一法例內搜尋；不會按主題尋找所有法例、判定合規情況或設定提示。"
+          },
+          "zh-TW": {
+            "subtitle": "西班牙法律與 BOE 條文",
+            "description": "在西班牙（España）的法律或法規中查找所需條文。使用經核實的識別碼，在 BOE 彙編法規內搜尋標題或全文。取得相符的條文或區塊識別碼、可用版本資訊、摘錄與原始連結，有助於確認條文措辭並定位需閱讀的規定。比較修訂內容或評估適用性仍需閱讀相關文本並進一步審核。此連接器僅在指定的單一法規內搜尋；不會依主題找出所有法規、判定法規遵循或設定通知。"
+          }
+        },
+        "release_notes": "Added full 63-language OpenAI marketplace translations across all supported locales."
       }
     }
   }

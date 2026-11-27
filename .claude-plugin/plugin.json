@@ -1,7 +1,7 @@
 {
   "name": "boe-impact",
   "displayName": "Spain Laws & BOE",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "Find articles in Spanish laws and regulations (leyes y normativa de España). Search a verified BOE law identifier by title or text and cite the available dated wording.",
   "author": {
     "name": "Sami Halawa",
